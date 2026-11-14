@@ -1,0 +1,142 @@
+/*
+ * Guía de estilo base · Puente LESCO (HU-04)
+ * Todos los pares texto/fondo cumplen WCAG 2.1 AA (contraste mínimo 4.5:1).
+ * Contrastes medidos contra el fondo blanco (#ffffff):
+ *   --texto          #1a1a1a  17.4:1
+ *   --texto-suave    #4a4a4a   8.9:1
+ *   --primario       #1f4e79   8.6:1  (también texto blanco sobre primario)
+ *   --exito          #1e6b34   6.6:1
+ *   --error          #b3261e   6.5:1
+ * El foco de teclado usa un borde amarillo grueso con contorno oscuro,
+ * visible sobre cualquier fondo.
+ */
+
+:root {
+  --texto: #1a1a1a;
+  --texto-suave: #4a4a4a;
+  --fondo: #ffffff;
+  --superficie: #f4f6f8;
+  --borde: #8a94a0;
+  --primario: #1f4e79;
+  --primario-oscuro: #163a5b;
+  --exito: #1e6b34;
+  --error: #b3261e;
+  --foco: #ffbf47;
+
+  --radio: 10px;
+  --espacio: 1rem;
+  --ancho-max: 64rem;
+  --objetivo-tactil: 44px;
+
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 112.5%; /* 18 px: texto grande y fácil de leer */
+  line-height: 1.6;
+  color: var(--texto);
+  background: var(--fondo);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  color: var(--texto);
+}
+
+a {
+  color: var(--primario);
+  text-underline-offset: 3px;
+}
+
+/* Foco visible para quien navega con teclado */
+:focus-visible {
+  outline: 4px solid var(--foco);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px var(--texto);
+}
+
+/* Enlace para saltar al contenido */
+.saltar {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: 0.75rem 1rem;
+  background: var(--primario);
+  color: #fff;
+  z-index: 10;
+}
+.saltar:focus {
+  left: 1rem;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+  padding: 0 var(--espacio);
+}
+
+/* Botones: grandes, con texto y nunca dependen solo del color */
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: var(--objetivo-tactil);
+  padding: 0.6rem 1.25rem;
+  border: 2px solid var(--primario);
+  border-radius: var(--radio);
+  background: var(--primario);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.boton:hover {
+  background: var(--primario-oscuro);
+  border-color: var(--primario-oscuro);
+}
+.boton--secundario {
+  background: var(--fondo);
+  color: var(--primario);
+}
+.boton--secundario:hover {
+  background: var(--superficie);
+  color: var(--primario-oscuro);
+}
+
+.tarjeta {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 1.25rem;
+}
+
+.aviso {
+  border-left: 6px solid var(--primario);
+  background: var(--superficie);
+  padding: 1rem 1.25rem;
+  border-radius: 0 var(--radio) var(--radio) 0;
+}
+
+.icono {
+  font-size: 1.4em;
+  line-height: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

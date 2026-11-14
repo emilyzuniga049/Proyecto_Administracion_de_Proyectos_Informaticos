@@ -1,0 +1,77 @@
+.encabezado {
+  background: var(--primario);
+  color: #fff;
+}
+
+.encabezado__fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--objetivo-tactil);
+  padding: 0 0.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* La página actual se marca con subrayado grueso, no solo con color */
+.menu a.active {
+  text-decoration-thickness: 4px;
+}
+
+.principal {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  min-height: 70vh;
+}
+
+.principal:focus {
+  outline: none;
+}
+
+.pie {
+  border-top: 1px solid var(--borde);
+  background: var(--superficie);
+  color: var(--texto-suave);
+}
+
+.pie__fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pie p {
+  margin: 0;
+}
