@@ -1,0 +1,16 @@
+.privacidad {
+  max-width: 44rem;
+}
+
+.privacidad__version {
+  color: var(--texto-suave);
+  margin-top: -0.5rem;
+}
+
+.privacidad h2 {
+  margin-top: 2rem;
+}
+
+.privacidad li {
+  margin-bottom: 0.5rem;
+}

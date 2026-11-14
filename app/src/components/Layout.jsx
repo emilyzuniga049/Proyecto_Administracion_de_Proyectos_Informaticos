@@ -42,7 +42,8 @@ export default function Layout() {
       <footer className="pie">
         <div className="contenedor pie__fila">
           <p>
-            Prototipo académico · UTN San Carlos · ISW-912 · Todos los datos son ficticios.
+            Prototipo académico · UTN San Carlos · ISW-912 · Todos los datos son ficticios. ·{' '}
+            <NavLink to="/privacidad">Aviso de privacidad</NavLink>
           </p>
           <button type="button" className="boton boton--secundario" onClick={restablecer}>
             Restablecer datos de prueba
