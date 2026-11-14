@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import './Privacidad.css'
 
+import { FECHA_AVISO, VERSION_AVISO } from '../data/catalogos.js'
+
 // HU-05 · Consentimiento informado (Ley 8968).
-// Si este texto cambia, se sube la versión: el registro guarda qué versión aceptó cada persona.
-export const VERSION_AVISO = '1.0'
-export const FECHA_AVISO = '13 de noviembre de 2026'
+// Si este texto cambia, se sube VERSION_AVISO en data/catalogos.js.
 
 export default function Privacidad() {
   return (

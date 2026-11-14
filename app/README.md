@@ -22,6 +22,17 @@ Otros comandos:
 | `npm run build` | Genera la versión publicable en `dist/` |
 | `npm run preview` | Sirve la versión de `dist/` para probarla |
 
+## Pantallas
+
+| Ruta | Pantalla | Estado |
+|---|---|---|
+| `/` | Inicio | Lista |
+| `/registro` | Crear una cuenta (HU-01, HU-05) | Diseño listo; falta la lógica y la casilla de consentimiento (Dylan) |
+| `/iniciar-sesion` | Iniciar sesión (HU-01) | Diseño listo; falta la lógica (Dylan) |
+| `/privacidad` | Aviso de privacidad (HU-05) | Lista |
+| `/panel` | Mi panel | Pendiente: menú según el rol (Dylan) |
+| `/disponibilidad` | Perfil y horarios del intérprete (HU-03) | Diseño listo; falta la lógica y la validación de traslapes (Dylan) |
+
 ## Usuarios de prueba
 
 Todos usan la contraseña `demo1234`. Son personas ficticias.
@@ -44,6 +55,8 @@ El botón **Restablecer datos de prueba** (al pie de cada página) borra lo guar
 | `src/components/` | Partes comunes: `Layout` (encabezado, menú, pie), `Campo` (campo de formulario accesible), `SelectorRol` (tarjetas de rol) e `Icono` (íconos de línea, siempre con texto) |
 | `src/data/datos-iniciales.json` | Usuarios, intérpretes y disponibilidad de prueba |
 | `src/lib/almacen.js` | Leer, guardar y restablecer los datos del navegador |
+| `src/lib/disponibilidad.js` | Perfil y horarios del intérprete. La pantalla ya lo llama; **la lógica está pendiente (HU-03, Dylan)** |
+| `src/data/catalogos.js` | Listas fijas: días, especialidades y versión del aviso de privacidad |
 | `src/lib/sesion.js` | Registro e inicio de sesión. Las pantallas ya lo llaman; **la lógica está pendiente (HU-01, Dylan)** y cada función explica qué recibe y qué devuelve |
 | `src/index.css` | Guía de estilo base: colores con contraste AA, tipografía, botones y foco visible |
 
