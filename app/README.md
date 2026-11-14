@@ -41,9 +41,10 @@ El botón **Restablecer datos de prueba** (al pie de cada página) borra lo guar
 | Carpeta | Contenido |
 |---|---|
 | `src/pages/` | Una pantalla por archivo. `Pendiente.jsx` marca las que todavía no se construyen. |
-| `src/components/` | Partes comunes, como el `Layout` (encabezado, menú, pie) |
+| `src/components/` | Partes comunes: `Layout` (encabezado, menú, pie), `Campo` (campo de formulario accesible), `SelectorRol` (tarjetas de rol) e `Icono` (íconos de línea, siempre con texto) |
 | `src/data/datos-iniciales.json` | Usuarios, intérpretes y disponibilidad de prueba |
 | `src/lib/almacen.js` | Leer, guardar y restablecer los datos del navegador |
+| `src/lib/sesion.js` | Registro e inicio de sesión. Las pantallas ya lo llaman; **la lógica está pendiente (HU-01, Dylan)** y cada función explica qué recibe y qué devuelve |
 | `src/index.css` | Guía de estilo base: colores con contraste AA, tipografía, botones y foco visible |
 
 ## Reglas del equipo (Definition of Done)

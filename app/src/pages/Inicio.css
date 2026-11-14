@@ -26,3 +26,15 @@
 .pasos p {
   margin: 0;
 }
+
+.pasos__icono {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--fondo);
+  border: 2px solid var(--primario);
+  color: var(--primario);
+}

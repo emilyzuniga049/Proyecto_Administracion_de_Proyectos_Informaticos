@@ -129,9 +129,8 @@ a {
   border-radius: 0 var(--radio) var(--radio) 0;
 }
 
-.icono {
-  font-size: 1.4em;
-  line-height: 1;
+.icono-svg {
+  flex-shrink: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {

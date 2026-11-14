@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import { restablecerDatos } from '../lib/almacen.js'
+import Icono from './Icono.jsx'
 
 export default function Layout() {
   function restablecer() {
@@ -16,6 +17,7 @@ export default function Layout() {
       <header className="encabezado">
         <div className="contenedor encabezado__fila">
           <NavLink to="/" className="marca">
+            <Icono nombre="marca" tamano={32} />
             <span>Puente LESCO</span>
           </NavLink>
 

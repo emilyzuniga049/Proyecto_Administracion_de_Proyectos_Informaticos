@@ -1,0 +1,233 @@
+.formulario-pagina {
+  max-width: 36rem;
+}
+
+.formulario-pagina__intro {
+  color: var(--texto-suave);
+}
+
+.formulario-pagina__otra {
+  margin-top: 1.5rem;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.formulario__nota {
+  margin: 0;
+}
+
+.boton--ancho {
+  width: 100%;
+  font-size: 1.1rem;
+  min-height: 52px;
+}
+
+/* Campos */
+.campo__etiqueta {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.campo__opcional {
+  font-weight: 400;
+  color: var(--texto-suave);
+}
+
+.campo__ayuda {
+  margin: 0 0 0.4rem;
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+}
+
+.campo__control {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.campo input {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--borde);
+  border-radius: var(--radio);
+  font: inherit;
+  color: var(--texto);
+  background: var(--fondo);
+}
+
+.campo--error input {
+  border-color: var(--error);
+  border-width: 3px;
+}
+
+.campo__ver {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 48px;
+  padding: 0 0.75rem;
+  border: 2px solid var(--borde);
+  border-radius: var(--radio);
+  background: var(--fondo);
+  color: var(--primario);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.campo__error {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.4rem 0 0;
+  color: var(--error);
+  font-weight: 600;
+}
+
+/* Selección de rol */
+.roles {
+  min-width: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.roles__opciones {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.rol {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 2px solid var(--borde);
+  border-radius: var(--radio);
+  background: var(--fondo);
+  cursor: pointer;
+}
+
+.rol:hover {
+  border-color: var(--primario);
+}
+
+/* El radio real queda invisible pero sigue funcionando con teclado y lector de pantalla */
+.rol input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.rol:has(input:focus-visible) {
+  outline: 4px solid var(--foco);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px var(--texto);
+}
+
+/* Elegido: borde grueso, fondo y marca de verificación (no solo color) */
+.rol--elegido {
+  border-color: var(--primario);
+  border-width: 3px;
+  background: var(--superficie);
+}
+
+.rol--elegido::after {
+  content: 'Elegido';
+  position: absolute;
+  top: -0.8rem;
+  right: 0.75rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--primario);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.roles--error .rol {
+  border-color: var(--error);
+}
+
+.rol__icono {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid var(--primario);
+  color: var(--primario);
+}
+
+.rol__texto {
+  display: grid;
+}
+
+.rol__titulo {
+  font-weight: 700;
+}
+
+.rol__detalle {
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+}
+
+/* Resumen de errores arriba del formulario */
+.resumen-errores {
+  border: 3px solid var(--error);
+  border-radius: var(--radio);
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+}
+
+.resumen-errores:focus {
+  outline: 4px solid var(--foco);
+}
+
+.resumen-errores__titulo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  color: var(--error);
+  font-weight: 700;
+}
+
+.resumen-errores ul {
+  margin: 0.5rem 0 0;
+}
+
+/* Usuarios de prueba */
+.demo {
+  margin-top: 2rem;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 0.75rem 1rem;
+  background: var(--superficie);
+}
+
+.demo summary {
+  font-weight: 600;
+  cursor: pointer;
+  min-height: var(--objetivo-tactil);
+  display: flex;
+  align-items: center;
+}
+
+.rol--elegido .rol__icono {
+  background: var(--primario);
+  color: #fff;
+}
