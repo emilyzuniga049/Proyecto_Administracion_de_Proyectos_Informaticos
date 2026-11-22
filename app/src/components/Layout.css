@@ -75,3 +75,27 @@
 .pie p {
   margin: 0;
 }
+
+.menu__usuario {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--objetivo-tactil);
+  padding: 0 0.5rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.menu__boton {
+  min-height: var(--objetivo-tactil);
+  padding: 0 0.75rem;
+  border: 2px solid #fff;
+  border-radius: var(--radio);
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu__boton:hover {
+  background: rgba(255, 255, 255, 0.15);
+}

@@ -23,3 +23,11 @@ export const ESPECIALIDADES = [
 // el registro guarda qué versión aceptó cada persona.
 export const VERSION_AVISO = '1.0'
 export const FECHA_AVISO = '13 de noviembre de 2026'
+
+// Nombre visible de cada rol
+export const NOMBRE_ROL = {
+  persona_sorda: 'Persona sorda',
+  funcionario: 'Funcionario',
+  interprete: 'Intérprete',
+  admin: 'Administración',
+}
