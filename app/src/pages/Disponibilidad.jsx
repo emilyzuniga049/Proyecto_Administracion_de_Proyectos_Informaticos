@@ -1,6 +1,7 @@
 import { useId, useRef, useState } from 'react'
 import Icono from '../components/Icono.jsx'
-import { usuarioActual } from '../lib/sesion.js'
+import { Link, Navigate } from 'react-router-dom'
+import { useSesion } from '../lib/useSesion.js'
 import {
   eliminarBloque,
   guardarBloque,
@@ -22,9 +23,6 @@ const HORAS = Array.from({ length: 31 }, (_, i) => {
   const m = String(minutos % 60).padStart(2, '0')
   return `${h}:${m}`
 })
-
-// Mientras no exista el inicio de sesión (HU-01), la pantalla usa a una intérprete de prueba
-const INTERPRETE_DE_PRUEBA = { id: 'u-3', nombre: 'Laura Vargas (ficticia)' }
 
 const BLOQUE_VACIO = { id: null, dia: 'lunes', inicio: '08:00', fin: '12:00' }
 
@@ -74,10 +72,27 @@ function Mensaje({ mensaje }) {
   )
 }
 
+// Solo los intérpretes con sesión abierta pueden ver esta pantalla
 export default function Disponibilidad() {
-  const usuario = usuarioActual()
-  const interprete = usuario ?? INTERPRETE_DE_PRUEBA
-  const enPrueba = !usuario
+  const usuario = useSesion()
+  if (!usuario) return <Navigate to="/iniciar-sesion" replace />
+  if (usuario.rol !== 'interprete') {
+    return (
+      <div className="disponibilidad">
+        <h1>Mi perfil y mis horarios</h1>
+        <div className="aviso">
+          <p>Esta pantalla es solo para intérpretes de LESCO.</p>
+        </div>
+        <p>
+          <Link to="/panel">Volver a mi panel</Link>
+        </p>
+      </div>
+    )
+  }
+  return <FormularioDisponibilidad interprete={usuario} key={usuario.id} />
+}
+
+function FormularioDisponibilidad({ interprete }) {
 
   const perfilGuardado = obtenerPerfil(interprete.id)
   const [descripcion, setDescripcion] = useState(perfilGuardado?.descripcion ?? '')
@@ -168,14 +183,6 @@ export default function Disponibilidad() {
         Las personas solo pueden agendarle en los horarios que usted publique aquí.
       </p>
 
-      {enPrueba && (
-        <div className="aviso">
-          <p>
-            <strong>Modo de prueba:</strong> mientras se programa el inicio de sesión, esta
-            pantalla muestra a {INTERPRETE_DE_PRUEBA.nombre}.
-          </p>
-        </div>
-      )}
 
       {/* ---------- Perfil ---------- */}
       <section aria-labelledby="titulo-perfil" className="tarjeta seccion">
