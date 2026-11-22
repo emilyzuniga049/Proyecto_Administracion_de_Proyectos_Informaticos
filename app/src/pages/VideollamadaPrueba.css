@@ -1,0 +1,28 @@
+.videollamada {
+  max-width: 64rem;
+}
+
+.videollamada__form {
+  max-width: 36rem;
+}
+
+/* El contenedor existe siempre (Jitsi lo necesita), pero solo se ve durante la llamada */
+.videollamada__marco {
+  display: none;
+}
+
+.videollamada__marco--activo {
+  display: block;
+  height: 70vh;
+  min-height: 26rem;
+  margin: 1rem 0;
+  border: 2px solid var(--borde);
+  border-radius: var(--radio);
+  overflow: hidden;
+  background: #000;
+}
+
+.boton[disabled] {
+  opacity: 0.7;
+  cursor: wait;
+}

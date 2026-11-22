@@ -24,14 +24,25 @@ Otros comandos:
 
 ## Pantallas
 
-| Ruta | Pantalla | Estado |
+| Ruta | Pantalla | Historia |
 |---|---|---|
-| `/` | Inicio | Lista |
-| `/registro` | Crear una cuenta (HU-01, HU-05) | Diseño listo; falta la lógica y la casilla de consentimiento (Dylan) |
-| `/iniciar-sesion` | Iniciar sesión (HU-01) | Diseño listo; falta la lógica (Dylan) |
-| `/privacidad` | Aviso de privacidad (HU-05) | Lista |
-| `/panel` | Mi panel | Pendiente: menú según el rol (Dylan) |
-| `/disponibilidad` | Perfil y horarios del intérprete (HU-03) | Diseño listo; falta la lógica y la validación de traslapes (Dylan) |
+| `/` | Inicio | — |
+| `/registro` | Crear una cuenta, con rol y consentimiento obligatorio | HU-01, HU-05 |
+| `/iniciar-sesion` | Iniciar sesión | HU-01 |
+| `/panel` | Mi panel: opciones según el rol (requiere sesión) | HU-01 |
+| `/disponibilidad` | Perfil y horarios del intérprete (solo intérpretes) | HU-03 |
+| `/videollamada-prueba` | Llamada de prueba entre dos navegadores | SP-01 |
+| `/privacidad` | Aviso de privacidad | HU-05 |
+
+## Videollamada (SP-01)
+
+Por defecto usa el servidor público **meet.jit.si**: no necesita cuenta, pero las llamadas incrustadas se cortan a los 5 minutos. Para usar **JaaS** (8x8, gratuito), cree la cuenta y ponga su App ID en `app/.env.local` (y en las variables de entorno de Vercel):
+
+```
+VITE_JAAS_APP_ID=vpaas-magic-cookie-xxxxxxxx
+```
+
+Cómo probar: abra `/videollamada-prueba` en dos navegadores o equipos, escriba la misma sala y entre en ambos. Si la llamada no carga, el botón **Abrir en otra pestaña** abre la misma sala directamente en Jitsi (plan B del riesgo R-02).
 
 ## Usuarios de prueba
 
@@ -55,9 +66,10 @@ El botón **Restablecer datos de prueba** (al pie de cada página) borra lo guar
 | `src/components/` | Partes comunes: `Layout` (encabezado, menú, pie), `Campo` (campo de formulario accesible), `SelectorRol` (tarjetas de rol) e `Icono` (íconos de línea, siempre con texto) |
 | `src/data/datos-iniciales.json` | Usuarios, intérpretes y disponibilidad de prueba |
 | `src/lib/almacen.js` | Leer, guardar y restablecer los datos del navegador |
-| `src/lib/disponibilidad.js` | Perfil y horarios del intérprete. La pantalla ya lo llama; **la lógica está pendiente (HU-03, Dylan)** |
+| `src/lib/disponibilidad.js` | Perfil y horarios del intérprete, con la validación de traslapes (HU-03) |
+| `src/lib/jitsi.js` | Configuración de la videollamada (meet.jit.si o JaaS) |
 | `src/data/catalogos.js` | Listas fijas: días, especialidades y versión del aviso de privacidad |
-| `src/lib/sesion.js` | Registro e inicio de sesión. Las pantallas ya lo llaman; **la lógica está pendiente (HU-01, Dylan)** y cada función explica qué recibe y qué devuelve |
+| `src/lib/sesion.js` y `useSesion.js` | Registro, inicio y cierre de sesión, y el usuario con sesión abierta (HU-01, HU-05) |
 | `src/index.css` | Guía de estilo base: colores con contraste AA, tipografía, botones y foco visible |
 
 ## Reglas del equipo (Definition of Done)
