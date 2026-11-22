@@ -4,10 +4,11 @@ import Campo from '../components/Campo.jsx'
 import SelectorRol from '../components/SelectorRol.jsx'
 import Icono from '../components/Icono.jsx'
 import { registrar } from '../lib/sesion.js'
+import { VERSION_AVISO } from '../data/catalogos.js'
 import './Formularios.css'
 
 // HU-01 · Pantalla de registro con selección de rol (diseño: Emily).
-// La lógica vive en lib/sesion.js (Dylan).
+// La lógica vive en lib/sesion.js (Dylan). Casilla de consentimiento: HU-05 (Dylan).
 export default function Registro() {
   const navegar = useNavigate()
   const resumen = useRef(null)
@@ -15,6 +16,7 @@ export default function Registro() {
   const [correo, setCorreo] = useState('')
   const [contrasena, setContrasena] = useState('')
   const [rol, setRol] = useState('')
+  const [acepta, setAcepta] = useState(false)
   const [errores, setErrores] = useState({})
 
   function enviar(evento) {
@@ -24,8 +26,7 @@ export default function Registro() {
       correo: correo.trim(),
       contrasena,
       rol,
-      // HU-05 (Dylan): reemplazar por el estado de la casilla de consentimiento
-      consentimiento: null,
+      consentimiento: { aceptado: acepta, version: VERSION_AVISO },
     })
 
     if (resultado.ok) {
@@ -91,11 +92,30 @@ export default function Registro() {
           error={errores.contrasena}
         />
 
-        {/* HU-05 (Dylan): aquí va la casilla obligatoria "Leí y acepto el aviso de privacidad" */}
-        <p className="formulario__nota">
-          Antes de crear su cuenta, lea el{' '}
-          <Link to="/privacidad">aviso de privacidad</Link>.
-        </p>
+        {/* HU-05 · Consentimiento informado (Ley 8968): casilla obligatoria */}
+        <div className={`consentimiento${errores.consentimiento ? ' consentimiento--error' : ''}`}>
+          <label className="consentimiento__casilla">
+            <input
+              type="checkbox"
+              checked={acepta}
+              onChange={(e) => setAcepta(e.target.checked)}
+              aria-invalid={errores.consentimiento ? 'true' : undefined}
+              aria-describedby={errores.consentimiento ? 'consentimiento-error' : 'consentimiento-ayuda'}
+            />
+            <span>Leí y acepto el aviso de privacidad (versión {VERSION_AVISO}).</span>
+          </label>
+          <p id="consentimiento-ayuda" className="campo__ayuda">
+            <Link to="/privacidad" target="_blank" rel="noopener">
+              Leer el aviso de privacidad (se abre en otra pestaña)
+            </Link>
+          </p>
+          {errores.consentimiento && (
+            <p id="consentimiento-error" className="campo__error">
+              <Icono nombre="alerta" tamano={20} />
+              {errores.consentimiento}
+            </p>
+          )}
+        </div>
 
         <button type="submit" className="boton boton--ancho">
           Crear mi cuenta
