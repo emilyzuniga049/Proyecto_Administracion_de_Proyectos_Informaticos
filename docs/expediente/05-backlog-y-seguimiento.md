@@ -165,8 +165,8 @@ Esos 18 puntos se terminaron dentro del Sprint 2:
 | HU-08 | Aceptar o rechazar solicitudes de cita (versión simple: aceptación automática) | Nuevo | 3 | Por hacer |
 | HU-11 | Unirse a la videollamada de la cita | Nuevo | 8 | Por hacer |
 | MIT-02 | Datos de prueba que se cargan solos y botón "Restablecer demo" | Mitigación | — | Código listo (botón "Restablecer datos de prueba"); falta revisión |
-| MIT-03 | Grabar un video de respaldo del recorrido completo | Mitigación | — | Por hacer |
-| MIT-04 | Probar la videollamada en la red del aula y con datos móviles | Mitigación | — | Datos móviles probados el 23/11; falta la red del aula |
+| MIT-03 | Grabar un video de respaldo del recorrido completo (versión mínima, CR-07) | Mitigación | — | Por hacer |
+| MIT-04 | Probar la videollamada en la red del aula y con datos móviles | Mitigación | — | Quitada (CR-07); datos móviles probados el 23/11 |
 | | **Total** | | **37** | **18 en Hecho** |
 
 Como el Sprint 2 dura 6 días y carga 37 puntos, desde el inicio se aplica el orden de recorte de la [Sección 07](07-estimacion-y-cronograma.md): no se toman opcionales y HU-08 se hace en su versión simple (las citas quedan aceptadas automáticamente).

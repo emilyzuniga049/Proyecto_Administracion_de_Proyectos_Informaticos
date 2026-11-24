@@ -79,7 +79,7 @@ En **Por hacer (Sprint 1)** se cargaron las 21 tareas del Sprint 1 ([Sección 05
 | MIT-01 · Primera versión en Vercel | 1 | Dylan |
 | Revisión, accesibilidad y Sprint Review | 3 | Dylan, Emily |
 
-El 23/11 las 21 tareas del Sprint 1 quedaron en **Hecho** y la columna pasó a llamarse **Por hacer (Sprint 2 · 20–25 nov)**, con HU-06, HU-07, HU-08, HU-11, MIT-03, MIT-04 y la preparación de la Sprint Review del Sprint 1 (CR-06).
+El 23/11 las 21 tareas del Sprint 1 quedaron en **Hecho** y la columna pasó a llamarse **Por hacer (Sprint 2 · 20–25 nov)**, con HU-06, HU-07, HU-08, HU-11, MIT-03 y la preparación de la Sprint Review del Sprint 1 (CR-06). MIT-04 se archivó por CR-07.
 
 ## 10.3 Working Agreements (acuerdos de trabajo del equipo)
 

@@ -38,9 +38,9 @@
 | ID | Estrategia | Acciones concretas (ítem del backlog) | Disparador | Contingencia | Revisión | Riesgo residual |
 |---|---|---|---|---|---|---|
 | **R-01** | Mitigar | Alcance reducido a 37 puntos (D-01 y D-02); prototipo sin servidor; Daily de 10 minutos; orden de recorte definido en la [Sección 07](07-estimacion-y-cronograma.md). | A mitad del Sprint 1 (14 nov) hay menos de la mitad de las horas en Hecho, o el Sprint 1 cierra con menos de 13 puntos. | Aplicar el orden de recorte: sin opcionales, HU-11 en pestaña nueva, HU-08 con aceptación automática. | 14 nov y 19 nov | P 2 · I 2 = 4 🟡 |
-| **R-02** | Mitigar | Probar la llamada en el Sprint 1 (**SP-01**); usar JaaS en lugar de incrustar meet.jit.si; ensayar en el Sprint 2 (**MIT-04**). | SP-01 no logra conectar dos navegadores, o JaaS pide pago o corta la llamada. | Botón "Unirse a la llamada" que abre la sala en meet.jit.si en otra pestaña. Video de respaldo de la demo (**MIT-03**). | 19 nov | P 1 · I 2 = 2 🟢 |
+| **R-02** | Mitigar | Probar la llamada en el Sprint 1 (**SP-01**); usar JaaS en lugar de incrustar meet.jit.si; la llamada ya se probó en Vercel con datos móviles (23/11). | SP-01 no logra conectar dos navegadores, o JaaS pide pago o corta la llamada. | Botón "Unirse a la llamada" que abre la sala en meet.jit.si en otra pestaña. Video de respaldo de la demo (**MIT-03**). | 19 nov | P 1 · I 2 = 2 🟢 |
 | **R-04** | Mitigar | Fijar en el calendario un bloque semanal de horas para el proyecto; WIP de 1 tarea por persona; avisar en el Daily cualquier semana cargada. | Un integrante anuncia una semana con entregas de otros cursos o hay 2 Dailies seguidos sin avance. | Mover tareas al otro integrante y aplicar el orden de recorte. | Cada Daily | P 2 · I 2 = 4 🟡 |
-| **R-11** | Mitigar | Probar la videollamada con la red del aula y con datos móviles (**MIT-04**); grabar un video del recorrido completo (**MIT-03**). | En la prueba, la llamada tarda más de 10 segundos en conectar o se corta. | Usar datos móviles del celular como punto de acceso o mostrar el video de respaldo. | 24 nov | P 1 · I 2 = 2 🟢 |
+| **R-11** | Aceptar (desde el 23/11, CR-07) | La llamada ya se probó con datos móviles el 23/11; no se prueba aparte en la red del aula (MIT-04 se quitó). Se graba un video mínimo del recorrido (**MIT-03**). | En la prueba, la llamada tarda más de 10 segundos en conectar o se corta. | Usar datos móviles del celular como punto de acceso o mostrar el video de respaldo. | 24 nov | P 1 · I 2 = 2 🟢 |
 
 ### Otros riesgos
 
@@ -61,8 +61,8 @@
 |---|---|---|---|---|
 | MIT-01 | Publicar una primera versión en Vercel (ambiente de pruebas) | R-09, R-01 | Sprint 1 | Dylan |
 | MIT-02 | Datos de prueba que se cargan solos y botón "Restablecer demo" | R-08 | Sprint 2 | Dylan |
-| MIT-03 | Grabar un video de respaldo del recorrido completo | R-02, R-11 | Sprint 2 | Emily |
-| MIT-04 | Probar la videollamada en la red del aula y con datos móviles | R-02, R-11 | Sprint 2 | Dylan |
+| MIT-03 | Grabar un video de respaldo del recorrido completo (versión mínima: grabación de pantalla de unos 3 minutos, sin editar) | R-02, R-11 | Sprint 2 | Emily |
+| ~~MIT-04~~ | ~~Probar la videollamada en la red del aula y con datos móviles~~ · Quitada el 23/11 (CR-07); la prueba con datos móviles ya se hizo. | R-02, R-11 | — | — |
 
 ## 8.3 Adquisiciones críticas
 
