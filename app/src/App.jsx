@@ -7,6 +7,8 @@ import Panel from './pages/Panel.jsx'
 import Privacidad from './pages/Privacidad.jsx'
 import Disponibilidad from './pages/Disponibilidad.jsx'
 import VideollamadaPrueba from './pages/VideollamadaPrueba.jsx'
+import BuscarInterprete from './pages/BuscarInterprete.jsx'
+import LlamadaCita from './pages/LlamadaCita.jsx'
 import NoEncontrada from './pages/NoEncontrada.jsx'
 
 export default function App() {
@@ -20,6 +22,8 @@ export default function App() {
         <Route path="privacidad" element={<Privacidad />} />
         <Route path="disponibilidad" element={<Disponibilidad />} />
         <Route path="videollamada-prueba" element={<VideollamadaPrueba />} />
+        <Route path="buscar" element={<BuscarInterprete />} />
+        <Route path="citas/:citaId/llamada" element={<LlamadaCita />} />
         <Route path="*" element={<NoEncontrada />} />
       </Route>
     </Routes>

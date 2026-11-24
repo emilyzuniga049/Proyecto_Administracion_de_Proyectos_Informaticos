@@ -10,7 +10,8 @@ describe('almacén de datos del prototipo', () => {
     iniciarDatos()
     const datos = leerDatos()
     expect(datos.usuarios.length).toBeGreaterThan(0)
-    expect(datos.citas).toEqual([])
+    // Solo la cita de demostración (Sprint 2)
+    expect(datos.citas.map((c) => c.id)).toEqual(['c-demo'])
   })
 
   it('no borra lo guardado si ya hay datos', () => {
@@ -19,7 +20,7 @@ describe('almacén de datos del prototipo', () => {
     datos.citas.push({ id: 'c-1' })
     guardarDatos(datos)
     iniciarDatos()
-    expect(leerDatos().citas).toHaveLength(1)
+    expect(leerDatos().citas).toHaveLength(2)
   })
 
   it('restablecer vuelve a los datos de prueba', () => {
@@ -28,7 +29,13 @@ describe('almacén de datos del prototipo', () => {
     datos.citas.push({ id: 'c-1' })
     guardarDatos(datos)
     restablecerDatos()
-    expect(leerDatos().citas).toEqual([])
+    expect(leerDatos().citas.map((c) => c.id)).toEqual(['c-demo'])
+  })
+
+  it('reemplaza los datos guardados de una versión anterior', () => {
+    window.localStorage.setItem('puente-lesco-datos', JSON.stringify({ version: 1, usuarios: [], citas: [] }))
+    iniciarDatos()
+    expect(leerDatos().usuarios.length).toBeGreaterThan(0)
   })
 
   it('solo usa datos ficticios del dominio demo', () => {
