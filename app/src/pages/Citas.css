@@ -1,0 +1,162 @@
+/* Sprint 2 · Buscar (HU-06), agendar (HU-07), agenda y mis citas (HU-08) y llamada de la cita (HU-11) */
+.citas {
+  max-width: 48rem;
+}
+
+.citas__campos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+}
+
+.citas .formulario > .boton {
+  justify-self: start;
+}
+
+/* Resultados de la búsqueda */
+.resultados,
+.lista-citas,
+.horas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resultados,
+.lista-citas {
+  display: grid;
+  gap: 1rem;
+}
+
+.resultado p {
+  margin: 0.4rem 0;
+}
+
+.resultado__encabezado {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resultado__nombre {
+  margin: 0;
+}
+
+.resultado__verificado {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--exito);
+  font-weight: 600;
+}
+
+.resultado__horas-titulo {
+  font-weight: 700;
+}
+
+.horas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hora {
+  min-width: 5.5rem;
+}
+
+/* Detalle de una cita (resumen y confirmación) */
+.detalle {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.75rem;
+  margin: 0 0 1rem;
+}
+
+.detalle dt {
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+}
+
+.detalle dd {
+  margin: 0;
+  font-weight: 700;
+}
+
+.confirmacion {
+  margin-top: 1rem;
+  border: 3px solid var(--exito);
+  background: var(--fondo);
+}
+
+.confirmacion__titulo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0;
+  color: var(--exito);
+}
+
+.confirmacion__titulo:focus {
+  outline: none;
+}
+
+/* Lista de citas */
+.cita {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cita p {
+  margin: 0.25rem 0;
+}
+
+.cita__cuando {
+  font-size: 1.1rem;
+}
+
+.cita__notas {
+  color: var(--texto-suave);
+}
+
+.cita__espera {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: 16rem;
+  color: var(--texto-suave);
+  font-weight: 600;
+}
+
+.estado {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.estado--aceptada {
+  color: var(--exito);
+  border: 2px solid var(--exito);
+  background: var(--fondo);
+}
+
+.vacio-bloque {
+  display: grid;
+  gap: 0.75rem;
+  justify-items: start;
+}
+
+h2[tabindex='-1']:focus {
+  outline: none;
+}
+
+.citas > .acciones-formulario {
+  align-items: center;
+  margin-top: 1.5rem;
+}
