@@ -7,24 +7,24 @@ import './Formularios.css'
 import './Panel.css'
 
 // HU-01 · Menú según el rol: cada rol ve sus propias opciones.
-// Las opciones que llegan en el Sprint 2 se muestran, pero sin enlace.
+// Las opciones que quedaron fuera de este release se muestran, pero sin enlace.
 const OPCIONES = {
   persona_sorda: [
-    { titulo: 'Agendar una cita', detalle: 'Busque un intérprete y elija día y hora.', icono: 'calendario', sprint: 2 },
-    { titulo: 'Mis citas', detalle: 'Vea sus citas y entre a la videollamada.', icono: 'video', sprint: 2 },
+    { titulo: 'Agendar una cita', detalle: 'Busque un intérprete y elija día y hora.', icono: 'calendario', ruta: '/buscar' },
+    { titulo: 'Mis citas', detalle: 'Vea sus citas y entre a la videollamada.', icono: 'video', ruta: '/mis-citas' },
   ],
   funcionario: [
-    { titulo: 'Agendar una cita', detalle: 'Reserve un intérprete para atender a una persona sorda.', icono: 'calendario', sprint: 2 },
-    { titulo: 'Mis citas', detalle: 'Vea sus citas y entre a la videollamada.', icono: 'video', sprint: 2 },
+    { titulo: 'Agendar una cita', detalle: 'Reserve un intérprete para atender a una persona sorda.', icono: 'calendario', ruta: '/buscar' },
+    { titulo: 'Mis citas', detalle: 'Vea sus citas y entre a la videollamada.', icono: 'video', ruta: '/mis-citas' },
   ],
   interprete: [
+    { titulo: 'Mi agenda de citas', detalle: 'Vea las citas que le agendaron y entre a la videollamada.', icono: 'manos', ruta: '/mis-citas' },
     { titulo: 'Mi perfil y mis horarios', detalle: 'Publique cuándo puede atender citas.', icono: 'calendario', ruta: '/disponibilidad' },
     { titulo: 'Probar la videollamada', detalle: 'Llamada de prueba entre dos navegadores (SP-01).', icono: 'video', ruta: '/videollamada-prueba' },
-    { titulo: 'Solicitudes de cita', detalle: 'Acepte o rechace las citas que le piden.', icono: 'manos', sprint: 2 },
   ],
   admin: [
     { titulo: 'Probar la videollamada', detalle: 'Llamada de prueba entre dos navegadores (SP-01).', icono: 'video', ruta: '/videollamada-prueba' },
-    { titulo: 'Verificar intérpretes', detalle: 'Aprobar la certificación de LESCO (HU-02, opcional).', icono: 'persona', sprint: 2 },
+    { titulo: 'Verificar intérpretes', detalle: 'Aprobar la certificación de LESCO (HU-02).', icono: 'persona', nota: 'Opcional: fuera de este release' },
   ],
 }
 
@@ -72,7 +72,7 @@ export default function Panel() {
                 <span className="panel-opcion__texto">
                   <span className="panel-opcion__titulo">{o.titulo}</span>
                   <span>{o.detalle}</span>
-                  <span className="panel-opcion__pronto">Disponible en el Sprint {o.sprint}</span>
+                  <span className="panel-opcion__pronto">{o.nota}</span>
                 </span>
               </div>
             )}
