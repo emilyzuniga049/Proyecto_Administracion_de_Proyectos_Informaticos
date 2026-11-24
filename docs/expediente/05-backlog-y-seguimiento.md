@@ -6,12 +6,12 @@ El Product Backlog es la lista ordenada de todo lo que necesita el producto, de 
 
 Cada ítem tiene una prioridad (Alta, Media o Baja) y una estimación en puntos, que indica el tamaño del trabajo (1 es pequeño y 8 es grande). El detalle completo, con título y criterios de aceptación, está en la hoja *Product Backlog* de [`Backlog.xlsx`](../Backlog/Backlog.xlsx).
 
-### Distribución vigente (desde el 11/11/2026)
+### Distribución vigente (desde el 23/11/2026)
 
 | Sprint | Fechas | Enfoque | Ítems | Puntos |
 |---|---|---|---|---|
-| Sprint 1 | 9 – 22 nov (sem. 9–10) | Cuentas y roles, consentimiento, interfaz accesible, disponibilidad del intérprete y prueba de video | HU-01, HU-05, HU-04, HU-03, SP-01 | 18 |
-| Sprint 2 | 23 nov – 6 dic (sem. 11–12) | Agendar una cita y realizarla por videollamada | HU-06, HU-07, HU-08, HU-11 | 19 |
+| Sprint 1 | 9 – 19 nov | Cuentas y roles, consentimiento, interfaz accesible, disponibilidad del intérprete y prueba de video | HU-01, HU-05, HU-04, HU-03, SP-01 | 18 (se terminaron en el Sprint 2) |
+| Sprint 2 | 20 – 25 nov | Terminar lo arrastrado del Sprint 1; agendar una cita y realizarla por videollamada | HU-06, HU-07, HU-08, HU-11 | 19 |
 | Opcionales | Si la velocidad lo permite | Verificación del intérprete, pruebas finales y despliegue, chat en la llamada | HU-02, TEC-01, HU-12 | 9 |
 | Trabajo futuro | Fuera de este release | Cancelar y reagendar, recordatorios, invitar por enlace, historial, asistencia en tiempo real, panel del admin, IA | HU-09, HU-10, HU-13, HU-14, HU-15 a HU-21 | 39 |
 | | | | **Total** | **85** |
@@ -73,12 +73,12 @@ Estos seis ítems se dividieron en 20 tareas que sumaban 62 horas (31 para cada 
 - **Control del avance:** se comparan los puntos y las horas de las tareas en estado Hecho contra el total del Sprint, y se actualiza el burndown del release ([Sección 07](07-estimacion-y-cronograma.md)). Si a mitad del Sprint vamos atrasados, el equipo conversa con la Product Owner para ajustar el alcance, sin mover la fecha de entrega.
 - **Cierre del Sprint:** en la Sprint Review se muestra el avance al docente. En la Retrospectiva se anota la velocidad real. Lo que se aprenda se agrega o se reordena en el Product Backlog.
 
-## 5.4 Sprint Backlog 1 vigente (9 al 22 de noviembre)
+## 5.4 Sprint Backlog 1 (9 al 19 de noviembre)
 
 | Dato | Valor |
 |---|---|
 | **Inicio** | Lunes 9 de noviembre de 2026 (Sprint Planning) |
-| **Cierre** | Domingo 22 de noviembre de 2026 (Sprint Review y Retrospectiva) |
+| **Cierre** | Jueves 19 de noviembre de 2026 (se planificó para el domingo 22; se adelantó por CR-06) |
 | **Sprint Goal** | Dejar construida la base de la plataforma: que una persona sorda y un intérprete puedan registrarse e iniciar sesión con su rol, que el intérprete publique su perfil y disponibilidad, y que se compruebe técnicamente que la videollamada es viable. |
 | **Compromiso** | 18 puntos · 21 tareas · 56 horas |
 
@@ -119,7 +119,7 @@ HU-02 (verificación del intérprete) salió del Sprint 1 y quedó como primer o
 | MIT-01 | Publicar una primera versión en Vercel (ambiente de pruebas) | Dylan | 2 |
 | Todos | Revisión cruzada de cada historia contra la DoD | Dylan | 2 |
 | Todos | Revisión de accesibilidad con Lighthouse de cada pantalla nueva | Emily | 1 |
-| Todos | Preparar la Sprint Review del 22 de noviembre | Dylan | 1 |
+| Todos | Preparar la Sprint Review del Sprint 1 | Dylan | 1 |
 | | **Total** (Dylan 28 h · Emily 28 h) | | **56** |
 
 ### Cómo se verifica que cada ítem cumple la DoD
@@ -133,19 +133,40 @@ HU-02 (verificación del intérprete) salió del Sprint 1 y quedó como primer o
 
 Trello con las columnas **Por hacer / En progreso / En revisión / Hecho**. Detalle en la [Sección 10](10-comunicaciones-y-tablero.md).
 
-## 5.5 Sprint 2 (preliminar, 23 de noviembre al 6 de diciembre)
+### Resultado del Sprint 1
 
-**Sprint Goal propuesto:** «Que una persona sorda o un funcionario pueda buscar un intérprete, agendar una cita, que el intérprete la acepte y que ambos entren a la videollamada desde la plataforma».
+Al cierre del 19 de noviembre ninguna historia cumplía todavía la DoD: el trabajo de Emily estaba listo y en revisión, pero faltaban la lógica de Dylan, la publicación en Vercel (criterio 7) y las validaciones con usuarios. Por eso la **velocidad real del Sprint 1 es 0 puntos** y sus 5 ítems (18 puntos) pasaron al Sprint 2 como trabajo arrastrado (CR-06).
 
-| ID | Título | Puntos |
-|---|---|---|
-| HU-06 | Buscar intérpretes por fecha y hora | 3 |
-| HU-07 | Agendar una cita previa | 5 |
-| HU-08 | Aceptar o rechazar solicitudes de cita | 3 |
-| HU-11 | Unirse a la videollamada de la cita | 8 |
-| MIT-02 | Datos de prueba que se cargan solos y botón "Restablecer demo" | — |
-| MIT-03 | Grabar un video de respaldo del recorrido completo | — |
-| MIT-04 | Probar la videollamada en la red del aula y con datos móviles | — |
-| | **Total** | **19** |
+Esos 18 puntos se terminaron dentro del Sprint 2:
 
-Las tareas de este Sprint se definen en su Sprint Planning (23 de noviembre), con la velocidad real del Sprint 1.
+| Fecha | Qué se hizo |
+|---|---|
+| 22/11 | Dylan sube la lógica de HU-01, HU-05, HU-03 y el prototipo de SP-01 (push `247445d`). |
+| 23/11 | Emily publica en Vercel (MIT-01) y revisa las tareas de Dylan con la DoD. Se prueba la videollamada entre computadora y celular, también con datos móviles. Se valida la interfaz con una persona sorda y el formulario con un intérprete voluntario; ninguno pidió cambios. |
+
+## 5.5 Sprint 2 (20 al 25 de noviembre)
+
+| Dato | Valor |
+|---|---|
+| **Inicio** | Viernes 20 de noviembre de 2026 |
+| **Cierre** | Miércoles 25 de noviembre de 2026 (entrega final del proyecto) |
+| **Sprint Goal** | «Que una persona sorda o un funcionario pueda buscar un intérprete, agendar una cita, que el intérprete la acepte y que ambos entren a la videollamada desde la plataforma». |
+| **Compromiso** | 18 puntos arrastrados del Sprint 1 + 19 puntos nuevos = 37 puntos |
+
+| ID | Título | Origen | Puntos | Estado al 23/11 |
+|---|---|---|---|---|
+| HU-01 | Registro e inicio de sesión con rol | Arrastrado del Sprint 1 | 5 | Hecho |
+| HU-05 | Consentimiento informado (Ley 8968) | Arrastrado del Sprint 1 | 2 | Hecho |
+| HU-04 | Interfaz base accesible | Arrastrado del Sprint 1 | 3 | Hecho |
+| HU-03 | Perfil y disponibilidad del intérprete | Arrastrado del Sprint 1 | 5 | Hecho |
+| SP-01 | Prueba de concepto de videollamada | Arrastrado del Sprint 1 | 3 | Hecho |
+| HU-06 | Buscar intérpretes por fecha y hora | Nuevo | 3 | Por hacer |
+| HU-07 | Agendar una cita previa | Nuevo | 5 | Por hacer |
+| HU-08 | Aceptar o rechazar solicitudes de cita (versión simple: aceptación automática) | Nuevo | 3 | Por hacer |
+| HU-11 | Unirse a la videollamada de la cita | Nuevo | 8 | Por hacer |
+| MIT-02 | Datos de prueba que se cargan solos y botón "Restablecer demo" | Mitigación | — | Código listo (botón "Restablecer datos de prueba"); falta revisión |
+| MIT-03 | Grabar un video de respaldo del recorrido completo | Mitigación | — | Por hacer |
+| MIT-04 | Probar la videollamada en la red del aula y con datos móviles | Mitigación | — | Datos móviles probados el 23/11; falta la red del aula |
+| | **Total** | | **37** | **18 en Hecho** |
+
+Como el Sprint 2 dura 6 días y carga 37 puntos, desde el inicio se aplica el orden de recorte de la [Sección 07](07-estimacion-y-cronograma.md): no se toman opcionales y HU-08 se hace en su versión simple (las citas quedan aceptadas automáticamente).

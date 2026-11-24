@@ -32,7 +32,7 @@ Una historia está **Hecha** cuando:
 ## 9.4 Integración y despliegue
 
 - **Rama principal:** `main`. Si una historia es grande, se trabaja en una rama con su ID (por ejemplo, `hu-03-disponibilidad`) y se une a `main` después de la revisión.
-- **Ambiente de pruebas:** Vercel publica automáticamente cada cambio en `main`. Ese mismo enlace se usa en la Sprint Review y en la demo final.
+- **Ambiente de pruebas:** Vercel publica automáticamente cada cambio en `main`, en https://proyecto-administracion-de-proyecto.vercel.app/ (publicado el 23/11/2026, MIT-01). Ese mismo enlace se usa en la Sprint Review y en la demo final.
 - **Respaldo:** si el despliegue falla, la aplicación se puede ejecutar localmente con `npm run dev` (ver riesgo R-09 en la [Sección 08](08-riesgos-y-adquisiciones.md)).
 
 ## 9.5 Documentación mínima requerida

@@ -74,7 +74,7 @@
 | **Máxima** | 21 puntos | La capacidad planificada en el Sprint 1 original: 21 puntos en 62 horas. |
 | **Mínima** | 13 puntos | Unos dos tercios de la máxima, por la curva de aprendizaje y las entregas de otros cursos a fin de cuatrimestre. |
 
-La velocidad real se mide al cerrar cada Sprint, contando **solo** las historias que cumplen la DoD, y se anota en la Retrospectiva. Con la velocidad real del Sprint 1 (22 de noviembre) se ajusta el compromiso del Sprint 2.
+La velocidad real se mide al cerrar cada Sprint, contando **solo** las historias que cumplen la DoD, y se anota en la Retrospectiva. Con la velocidad real del Sprint 1 (19 de noviembre) se ajusta el compromiso del Sprint 2.
 
 ### Registro de la sesión de planning poker
 
@@ -92,10 +92,10 @@ La velocidad real se mide al cerrar cada Sprint, contando **solo** las historias
 
 | Dato | Valor |
 |---|---|
-| Duración del Sprint | 2 semanas (fija) |
+| Duración del Sprint | Planificada: 2 semanas. Real: Sprint 1 de 11 días (9–19 nov) y Sprint 2 de 6 días (20–25 nov), por la entrega adelantada (CR-05 y CR-06) |
 | Inicio del Sprint 1 de construcción | Lunes 9 de noviembre de 2026 |
 | Backlog comprometido para el release | 37 puntos |
-| Sprints disponibles antes del cierre | 2 (semanas 9 a 12) |
+| Sprints disponibles antes de la entrega | 2 (9 al 25 de noviembre) |
 
 ### Sprints necesarios (rango)
 
@@ -112,35 +112,34 @@ El rango honesto es **entre 2 y 3 Sprints**, y solo hay 2. Por eso el compromiso
 2. HU-11 se simplifica: la llamada abre en una pestaña nueva con el enlace de la cita, en lugar de ir incrustada (baja de 8 a unos 3 puntos).
 3. HU-08 se simplifica: las citas quedan aceptadas automáticamente y el intérprete solo las ve en su agenda.
 
-Así, aun con la velocidad mínima, la demo de la Semana 13 muestra el recorrido completo: registrarse, publicar disponibilidad, agendar y entrar a la videollamada.
+Así, aun con la velocidad mínima, la demo del 25 de noviembre muestra el recorrido completo: registrarse, publicar disponibilidad, agendar y entrar a la videollamada.
 
 ### Qué Incremento sale en cada Sprint
 
 | Sprint | Fechas | Incremento | Historias | Puntos |
 |---|---|---|---|---|
 | Sprint 0 | 28 set – 8 nov | Planificación del proyecto (Expediente, Secciones 00 a 10). Sin código. | — | 0 |
-| **Sprint 1** | 9 – 22 nov | Una persona sorda o un intérprete se registra con su rol y acepta el aviso de privacidad; el intérprete publica su disponibilidad; hay una llamada de prueba funcionando. Interfaz base accesible. | HU-01, HU-05, HU-04, HU-03, SP-01 | 18 |
-| **Sprint 2** | 23 nov – 6 dic | La persona busca un intérprete, agenda una cita, el intérprete la acepta y ambos entran a la videollamada desde la plataforma. | HU-06, HU-07, HU-08, HU-11 (+ opcionales) | 19 |
-| Cierre | 7 – 13 dic | Demo final, Informe Final y defensa. Sin desarrollo nuevo. | — | — |
+| **Sprint 1** | 9 – 19 nov | Una persona sorda o un intérprete se registra con su rol y acepta el aviso de privacidad; el intérprete publica su disponibilidad; hay una llamada de prueba funcionando. Interfaz base accesible. | HU-01, HU-05, HU-04, HU-03, SP-01 | 18 (terminados en el Sprint 2) |
+| **Sprint 2** | 20 – 25 nov | Se termina lo arrastrado del Sprint 1. La persona busca un intérprete, agenda una cita, el intérprete la acepta y ambos entran a la videollamada desde la plataforma. | Arrastre del Sprint 1 + HU-06, HU-07, HU-08, HU-11 | 18 + 19 |
+| Cierre | 25 nov | Entrega del Expediente y demo. | — | — |
 
 ### Hitos de entrega
 
 | Fecha | Hito |
 |---|---|
-| 22 nov | **Sprint Review 1:** se muestra el Incremento 1 (registro, disponibilidad y llamada de prueba). Se presenta al docente en la clase de la Semana 11. |
-| 6 dic | **Sprint Review 2:** Incremento 2 con el recorrido completo; funciona como ensayo general de la demo. |
-| Semana 13 | **Demo final y defensa** ante el docente, con el Expediente completo. |
+| 19 nov | **Cierre del Sprint 1.** El Incremento 1 no cumplía todavía la DoD; sus ítems pasan al Sprint 2 (CR-06). |
+| 23 nov | Incremento 1 publicado en Vercel y validado (registro, disponibilidad y llamada de prueba). |
+| 25 nov | **Cierre del Sprint 2 y entrega final:** Incremento 2 con el recorrido completo, demo y Expediente completo. |
 
 ```mermaid
 gantt
     title Release Plan
     dateFormat YYYY-MM-DD
     axisFormat %d/%m
-    Sprint 1 · Cuentas, disponibilidad y prueba de video :s1, 2026-11-09, 14d
-    Sprint Review 1      :milestone, 2026-11-22, 0d
-    Sprint 2 · Citas y videollamada :s2, 2026-11-23, 14d
-    Sprint Review 2      :milestone, 2026-12-06, 0d
-    Demo final (Semana 13) :2026-12-07, 7d
+    Sprint 1 · Cuentas, disponibilidad y prueba de video :s1, 2026-11-09, 11d
+    Cierre del Sprint 1  :milestone, 2026-11-19, 0d
+    Sprint 2 · Arrastre, citas y videollamada :s2, 2026-11-20, 6d
+    Entrega final y demo :milestone, 2026-11-25, 0d
 ```
 
 ### Costo estimado
@@ -165,7 +164,10 @@ Al cerrar cada Sprint se anotan los puntos que quedan del compromiso de 37. Si l
 | Momento | Ideal (puntos pendientes) | Real (puntos pendientes) |
 |---|---|---|
 | Inicio (9 nov) | 37 | 37 |
-| Fin del Sprint 1 (22 nov) | 19 | *(completar)* |
-| Fin del Sprint 2 (6 dic) | 0 | *(completar)* |
+| Fin del Sprint 1 (19 nov) | 19 | 37 (velocidad real: 0) |
+| Avance del Sprint 2 (23 nov) | — | 19 (18 puntos del arrastre en Hecho) |
+| Fin del Sprint 2 (25 nov) | 0 | *(completar)* |
 
 También se usa el **SPI = puntos terminados ÷ puntos planificados**. Si es menor que 1, vamos atrasados.
+
+**SPI del Sprint 1:** 0 ÷ 18 = 0. Vamos atrasados, así que se aplicó el orden de recorte en el Sprint 2 (sin opcionales y HU-08 en versión simple).

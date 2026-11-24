@@ -6,7 +6,7 @@ En esta fase no hay un cliente formal; el **docente** cumple el papel de patroci
 
 | Interesado | Poder / Interés | Qué información necesita | Frecuencia y evento | Canal | Responsable |
 |---|---|---|---|---|---|
-| **Docente del curso** | 5 / 4 | Avance del Expediente, Incremento de cada Sprint, cambios de alcance y riesgos altos | Cada clase (entrega de la sección), Sprint Review (22 nov y 6 dic), entrega final (Semana 13) | Clase presencial, campus virtual y repositorio de GitHub | Dylan |
+| **Docente del curso** | 5 / 4 | Avance del Expediente, Incremento de cada Sprint, cambios de alcance y riesgos altos | Cada clase (entrega de la sección), cierre de cada Sprint (19 y 25 nov), entrega final (25 nov) | Clase presencial, campus virtual y repositorio de GitHub | Dylan |
 | **Equipo (Emily y Dylan)** | 4 / 5 | Qué hizo cada uno, qué sigue, impedimentos | Daily de 10 minutos en cada día de trabajo; Sprint Planning, Review y Retrospectiva | Videollamada y WhatsApp; Trello para el estado de las tareas | Dylan |
 | **Personas sordas usuarias** | 4 / 5 | El Incremento para probar, en lenguaje sencillo y con apoyo visual | Al final de cada Sprint (validación del Incremento) | Videollamada o presencial; mensajes de texto (nunca solo audio) | Emily |
 | **Intérpretes de LESCO** | 4 / 4 | El formulario de disponibilidad (Sprint 1) y el recorrido de cita y llamada (Sprint 2) | Una vez por Sprint, antes de la Review | Correo o WhatsApp para coordinar; videollamada para la prueba | Emily |
@@ -56,7 +56,7 @@ Trello no bloquea automáticamente al pasar el límite, por eso el WIP va escrit
 - **Título:** ID de la historia, tarea, responsable y horas, por ejemplo `HU-01 · Diseñar las pantallas de registro… — Emily (5 h)`. Así el responsable se ve sin abrir la tarjeta.
 - **Miembro asignado:** además, cada integrante se asigna como miembro en sus tarjetas.
 - **Descripción:** historia a la que pertenece, puntos, responsable, horas y Sprint.
-- **Fecha límite:** el cierre del Sprint (22 de noviembre para el Sprint 1).
+- **Fecha límite:** el cierre del Sprint (19 de noviembre para el Sprint 1 y 25 de noviembre para el Sprint 2).
 - **Adjunto:** el enlace al *commit* en GitHub.
 
 La DoD está en una tarjeta fija al inicio de "Por hacer" (📌 *Definition of Done v1.0*) con el checklist de los 9 criterios de la [Sección 09](09-definition-of-done.md). Quien revisa una tarjeta la recorre punto por punto antes de moverla.
@@ -67,7 +67,7 @@ Una tarjeta pasa a **Hecho** solo si cumple los 9 puntos de la DoD y **el otro i
 
 ### Historias del Sprint Backlog 1 cargadas
 
-En **Por hacer (Sprint 1)** están cargadas las 21 tareas del Sprint 1 ([Sección 05, apartado 5.4](05-backlog-y-seguimiento.md#54-sprint-backlog-1-vigente-9-al-22-de-noviembre)), agrupadas por estas historias:
+En **Por hacer (Sprint 1)** se cargaron las 21 tareas del Sprint 1 ([Sección 05, apartado 5.4](05-backlog-y-seguimiento.md#54-sprint-backlog-1-9-al-19-de-noviembre)), agrupadas por estas historias:
 
 | Historia | Tareas | Responsables |
 |---|---|---|
@@ -79,9 +79,11 @@ En **Por hacer (Sprint 1)** están cargadas las 21 tareas del Sprint 1 ([Secció
 | MIT-01 · Primera versión en Vercel | 1 | Dylan |
 | Revisión, accesibilidad y Sprint Review | 3 | Dylan, Emily |
 
+El 23/11 las 21 tareas del Sprint 1 quedaron en **Hecho** y la columna pasó a llamarse **Por hacer (Sprint 2 · 20–25 nov)**, con HU-06, HU-07, HU-08, HU-11, MIT-03, MIT-04 y la preparación de la Sprint Review del Sprint 1 (CR-06).
+
 ## 10.3 Working Agreements (acuerdos de trabajo del equipo)
 
-**Versión:** 1.0 · **Fecha:** 22/11/2026 · **Próxima revisión:** Retrospectiva del Sprint 2 (6/12/2026)
+**Versión:** 1.0 · **Fecha:** 22/11/2026 · **Próxima revisión:** Retrospectiva del Sprint 2 (25/11/2026)
 
 Son las reglas que el equipo acordó para trabajar juntos. Se escribieron después de la Retrospectiva del Sprint 1, donde salió que el trabajo quedó desbalanceado y que las tareas terminadas esperaron días sin revisión. Cada regla se puede verificar: se cumple o no se cumple.
 

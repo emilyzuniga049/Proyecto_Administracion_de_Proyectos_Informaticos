@@ -6,7 +6,7 @@
 
 | ID | Riesgo ("si ocurre X, entonces Y") | Categoría | Tipo | P | I | Prioridad | Dueño |
 |---|---|---|---|---|---|---|---|
-| R-01 | Si el equipo no termina el Sprint 1 a tiempo (ya se perdieron las semanas 4 a 8 de construcción), entonces el recorrido de la demo no queda listo para la Semana 13. | Alcance | Amenaza | 3 | 3 | 🔴 9 | Dylan |
+| R-01 | Si el equipo no termina el Sprint 1 a tiempo (ya se perdieron las semanas 4 a 8 de construcción), entonces el recorrido de la demo no queda listo para la entrega del 25 de noviembre. | Alcance | Amenaza | 3 | 3 | 🔴 9 | Dylan |
 | R-02 | Si el servicio de videollamada (Jitsi/JaaS) cambia sus condiciones, falla o no permite incrustar la llamada, entonces la videollamada no funciona en la demo. | Tercero | Amenaza | 2 | 3 | 🔴 6 | Dylan |
 | R-03 | Si el equipo tarda en aprender React, entonces la velocidad del Sprint 1 baja y se atrasa el Sprint 2. | Técnico | Amenaza | 2 | 2 | 🟡 4 | Dylan |
 | R-04 | Si coinciden entregas y exámenes de otros cursos a fin de cuatrimestre, entonces se pierden horas del Sprint. | Equipo | Amenaza | 3 | 2 | 🔴 6 | Dylan |
@@ -37,10 +37,10 @@
 
 | ID | Estrategia | Acciones concretas (ítem del backlog) | Disparador | Contingencia | Revisión | Riesgo residual |
 |---|---|---|---|---|---|---|
-| **R-01** | Mitigar | Alcance reducido a 37 puntos (D-01 y D-02); prototipo sin servidor; Daily de 10 minutos; orden de recorte definido en la [Sección 07](07-estimacion-y-cronograma.md). | A mitad del Sprint 1 (16 nov) hay menos de la mitad de las horas en Hecho, o el Sprint 1 cierra con menos de 13 puntos. | Aplicar el orden de recorte: sin opcionales, HU-11 en pestaña nueva, HU-08 con aceptación automática. | 16 nov y 22 nov | P 2 · I 2 = 4 🟡 |
-| **R-02** | Mitigar | Probar la llamada en el Sprint 1 (**SP-01**); usar JaaS en lugar de incrustar meet.jit.si; ensayar en el Sprint 2 (**MIT-04**). | SP-01 no logra conectar dos navegadores, o JaaS pide pago o corta la llamada. | Botón "Unirse a la llamada" que abre la sala en meet.jit.si en otra pestaña. Video de respaldo de la demo (**MIT-03**). | 22 nov | P 1 · I 2 = 2 🟢 |
+| **R-01** | Mitigar | Alcance reducido a 37 puntos (D-01 y D-02); prototipo sin servidor; Daily de 10 minutos; orden de recorte definido en la [Sección 07](07-estimacion-y-cronograma.md). | A mitad del Sprint 1 (14 nov) hay menos de la mitad de las horas en Hecho, o el Sprint 1 cierra con menos de 13 puntos. | Aplicar el orden de recorte: sin opcionales, HU-11 en pestaña nueva, HU-08 con aceptación automática. | 14 nov y 19 nov | P 2 · I 2 = 4 🟡 |
+| **R-02** | Mitigar | Probar la llamada en el Sprint 1 (**SP-01**); usar JaaS en lugar de incrustar meet.jit.si; ensayar en el Sprint 2 (**MIT-04**). | SP-01 no logra conectar dos navegadores, o JaaS pide pago o corta la llamada. | Botón "Unirse a la llamada" que abre la sala en meet.jit.si en otra pestaña. Video de respaldo de la demo (**MIT-03**). | 19 nov | P 1 · I 2 = 2 🟢 |
 | **R-04** | Mitigar | Fijar en el calendario un bloque semanal de horas para el proyecto; WIP de 1 tarea por persona; avisar en el Daily cualquier semana cargada. | Un integrante anuncia una semana con entregas de otros cursos o hay 2 Dailies seguidos sin avance. | Mover tareas al otro integrante y aplicar el orden de recorte. | Cada Daily | P 2 · I 2 = 4 🟡 |
-| **R-11** | Mitigar | Probar la videollamada con la red del aula y con datos móviles (**MIT-04**); grabar un video del recorrido completo (**MIT-03**). | En la prueba, la llamada tarda más de 10 segundos en conectar o se corta. | Usar datos móviles del celular como punto de acceso o mostrar el video de respaldo. | 6 dic | P 1 · I 2 = 2 🟢 |
+| **R-11** | Mitigar | Probar la videollamada con la red del aula y con datos móviles (**MIT-04**); grabar un video del recorrido completo (**MIT-03**). | En la prueba, la llamada tarda más de 10 segundos en conectar o se corta. | Usar datos móviles del celular como punto de acceso o mostrar el video de respaldo. | 24 nov | P 1 · I 2 = 2 🟢 |
 
 ### Otros riesgos
 
@@ -53,7 +53,7 @@
 | R-08 | Mitigar | Datos de prueba que se cargan solos y botón "Restablecer demo" (**MIT-02**). | La demo se abre sin datos. | Presionar "Restablecer demo". |
 | R-09 | Aceptar | Publicar desde el Sprint 1 para detectar problemas temprano (**MIT-01**). | El enlace no carga. | Ejecutar la aplicación localmente con `npm run dev`. |
 | R-10 | Evitar | Lo que no está en el Sprint Backlog no entra; los cambios solo se deciden en el Sprint Planning y se anotan en la Sección 11. | Alguien empieza una tarea que no está en el tablero. | La PO la devuelve al Product Backlog. |
-| R-12 | Explotar | Tener HU-02, TEC-01 y HU-12 refinadas y listas para tomarlas. | Al 20 nov el Sprint 1 está casi terminado. | — |
+| R-12 | Explotar | Tener HU-02, TEC-01 y HU-12 refinadas y listas para tomarlas. | Al 17 nov el Sprint 1 está casi terminado. | — |
 
 ### Acciones de mitigación agregadas al Sprint Backlog
 

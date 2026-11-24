@@ -39,7 +39,7 @@ Al ser un equipo de dos personas, cada integrante combina una responsabilidad de
 | 09 · Calidad y Definition of Done | [09-definition-of-done.md](09-definition-of-done.md) | Completa |
 | 10 · Comunicación, tablero de trabajo y Working Agreements | [10-comunicaciones-y-tablero.md](10-comunicaciones-y-tablero.md) | Completa |
 | 11 · Decisiones y Registro de Solicitudes de Cambio | [11-decisiones-y-cambios.md](11-decisiones-y-cambios.md) | En curso |
-| 12 · Incremento final y cierre | — | Semana 13 |
+| 12 · Incremento final y cierre | — | Entrega del 25 de noviembre |
 | Historial de cambios | [historial-de-cambios.md](historial-de-cambios.md) | Se actualiza en cada entrega |
 
 El detalle del Product Backlog y de los Sprint Backlogs está en [`docs/Backlog/Backlog.xlsx`](../Backlog/Backlog.xlsx).

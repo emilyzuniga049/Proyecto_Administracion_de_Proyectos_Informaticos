@@ -14,7 +14,7 @@ Son condiciones que el equipo no controla, pero que influyen en el proyecto:
 |---|---|---|
 | Interno | Capacidad del equipo: 2 integrantes con disponibilidad parcial por otros cursos. | Limita cuánto alcance se puede comprometer en cada Sprint. |
 | Interno | Infraestructura y herramientas: computadoras personales, GitHub y servicios en la nube con planes gratuitos. | Condiciona el hosting, el almacenamiento de datos y el servicio de videollamada. |
-| Interno | Cultura y calendario académico: entregas semanales y cierre fijo en la Semana 13. | La fecha final no es negociable; se ajusta el alcance, no el plazo. |
+| Interno | Cultura y calendario académico: entregas semanales y cierre fijo el 25 de noviembre (antes Semana 13, CR-05). | La fecha final no es negociable; se ajusta el alcance, no el plazo. |
 | Externo | Ley 9822 de Reconocimiento y Promoción de la LESCO (sustituyó a la Ley 9049). | Respalda la necesidad y obliga a respetar la LESCO como lengua de la comunidad sorda. |
 | Externo | Ley 7600 de Igualdad de Oportunidades para las Personas con Discapacidad. | La plataforma debe ser accesible en todo su recorrido. |
 | Externo | Ley 8968 de Protección de la Persona frente al Tratamiento de sus Datos Personales. | Exige consentimiento informado y seguridad; las citas pueden revelar datos sensibles (salud, finanzas). |
@@ -22,11 +22,11 @@ Son condiciones que el equipo no controla, pero que influyen en el proyecto:
 | Externo | Baja madurez de la IA para la gramática de la LESCO. | La interpretación con IA se mantiene como función experimental, no como base del producto. |
 | Externo | Conectividad de los usuarios. | La videollamada debe funcionar razonablemente con conexiones lentas. |
 
-## 2.3 Restricciones del proyecto (actualizadas el 11/11/2026)
+## 2.3 Restricciones del proyecto (actualizadas el 23/11/2026)
 
 | Restricción | Descripción |
 |---|---|
-| **Tiempo** | Entrega final en la Semana 13 (7 al 13 de diciembre de 2026). Semanas 3 a 8: Sprint 0 de inicio y planificación. Semanas 9 a 12: 2 Sprints de construcción de 2 semanas. Semana 13: cierre y demo. |
+| **Tiempo** | Entrega final el **miércoles 25 de noviembre de 2026** (Semana 11), adelantada desde la Semana 13 (CR-05). Semanas 3 a 8: Sprint 0 de inicio y planificación. Construcción en 2 Sprints: Sprint 1 del 9 al 19 de noviembre y Sprint 2 del 20 al 25 de noviembre (CR-06). El 25 de noviembre se entregan el Expediente y la demo. |
 | **Costo** | Sin presupuesto monetario (₡0): solo herramientas gratuitas o con licencia educativa. |
 | **Recursos** | 2 integrantes con disponibilidad parcial, ya que comparten el proyecto con otros cursos. |
 | **Alcance** | El incremento final es un **prototipo funcional de demostración** centrado en agendar una cita con un intérprete y realizarla por videollamada. La asistencia en tiempo real y la IA quedan como trabajo futuro. |

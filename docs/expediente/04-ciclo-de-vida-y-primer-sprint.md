@@ -1,16 +1,16 @@
 # Sección 04 · Ciclo de vida del proyecto y primer Sprint
 
-## 4.1 Mapa del ciclo de vida (vigente desde el 11/11/2026)
+## 4.1 Mapa del ciclo de vida (vigente desde el 23/11/2026)
 
-El proyecto sigue un **ciclo de vida híbrido**: la fecha de cierre (Semana 13) es fija y el producto se construye de forma adaptativa en Sprints de 2 semanas. Las semanas 3 a 8 funcionaron como un **Sprint 0 de inicio y planificación**: en ellas se elaboró el Expediente (Product Goal, interesados, backlog, DoD, estimación, comunicación y riesgos) y no se construyó código. La construcción se hace en dos Sprints.
+El proyecto sigue un **ciclo de vida híbrido**: la fecha de entrega es fija y el producto se construye de forma adaptativa en Sprints cortos. La entrega se adelantó de la Semana 13 al 25 de noviembre (CR-05) y por eso los Sprints se ajustaron (CR-06). Las semanas 3 a 8 funcionaron como un **Sprint 0 de inicio y planificación**: en ellas se elaboró el Expediente (Product Goal, interesados, backlog, DoD, estimación, comunicación y riesgos) y no se construyó código. La construcción se hace en dos Sprints.
 
 | Fase | Semanas | Fechas | Grupo de procesos dominante | Resultado |
 |---|---|---|---|---|
 | Inicio | 1 a 3 | 14 set – 4 oct | Inicio | Problema, Product Goal, Scrum Team |
 | Planificación (Sprint 0) | 3 a 8 | 28 set – 8 nov | Planificación | Expediente, Secciones 00 a 10 |
-| Construcción: Sprint 1 | 9 y 10 | 9 – 22 nov | Ejecución y Monitoreo/Control | Cuentas, consentimiento, interfaz accesible, disponibilidad del intérprete y prueba de videollamada |
-| Construcción: Sprint 2 | 11 y 12 | 23 nov – 6 dic | Ejecución y Monitoreo/Control | Agendar una cita y realizarla por videollamada |
-| Cierre | 13 | 7 – 13 dic | Cierre | Expediente completo, Informe Final, demo y defensa |
+| Construcción: Sprint 1 | 9 y 10 | 9 – 19 nov | Ejecución y Monitoreo/Control | Cuentas, consentimiento, interfaz accesible, disponibilidad del intérprete y prueba de videollamada |
+| Construcción: Sprint 2 | 10 y 11 | 20 – 25 nov | Ejecución y Monitoreo/Control | Terminar lo arrastrado del Sprint 1; agendar una cita y realizarla por videollamada |
+| Cierre | 11 | 25 nov | Cierre | Expediente completo, Informe Final y demo |
 
 ```mermaid
 gantt
@@ -21,17 +21,17 @@ gantt
     Inicio (sem. 1-3)               :done, 2026-09-14, 2026-10-04
     Sprint 0 · Planificación (sem. 3-8) :done, 2026-09-28, 2026-11-08
     section Construcción
-    Sprint 1 (sem. 9-10)            :active, 2026-11-09, 2026-11-22
-    Sprint 2 (sem. 11-12)           :2026-11-23, 2026-12-06
+    Sprint 1 (9-19 nov)             :done, 2026-11-09, 2026-11-19
+    Sprint 2 (20-25 nov)            :active, 2026-11-20, 2026-11-25
     section Cierre
-    Demo y entrega (sem. 13)        :2026-12-07, 2026-12-13
+    Entrega y demo (sem. 11)        :milestone, 2026-11-25, 0d
 ```
 
-## 4.2 Sprint 1 de construcción (Semanas 9–10)
+## 4.2 Sprint 1 de construcción (9 al 19 de noviembre)
 
 **Sprint Goal:** «Dejar construida la base de la plataforma: que una persona sorda y un intérprete puedan registrarse e iniciar sesión con su rol, que el intérprete publique su perfil y disponibilidad, y que se compruebe técnicamente que la videollamada es viable».
 
-Se mantiene el mismo Sprint Goal del plan original, porque estas historias siguen siendo el cimiento del producto. El detalle (ítems, tareas y fechas) está en la [Sección 05, apartado 5.4](05-backlog-y-seguimiento.md#54-sprint-backlog-1-vigente-9-al-22-de-noviembre).
+Se mantiene el mismo Sprint Goal del plan original, porque estas historias siguen siendo el cimiento del producto. El detalle (ítems, tareas y fechas) está en la [Sección 05, apartado 5.4](05-backlog-y-seguimiento.md#54-sprint-backlog-1-9-al-19-de-noviembre).
 
 ---
 

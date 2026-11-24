@@ -10,7 +10,7 @@ Existe la oportunidad de desarrollar una plataforma web de intermediación y asi
 
 ## Product Goal (vigente desde el 11/11/2026)
 
-Para la Semana 13, entregar un **prototipo web funcional y accesible** en el que una persona sorda o un funcionario institucional pueda **agendar una cita con un intérprete de LESCO certificado y realizarla por videollamada dentro de la plataforma**, como primer paso para eliminar las barreras de comunicación de la comunidad sorda en Costa Rica.
+Para la entrega del 25 de noviembre de 2026 (Semana 11), entregar un **prototipo web funcional y accesible** en el que una persona sorda o un funcionario institucional pueda **agendar una cita con un intérprete de LESCO certificado y realizarla por videollamada dentro de la plataforma**, como primer paso para eliminar las barreras de comunicación de la comunidad sorda en Costa Rica.
 
 La asistencia inmediata en tiempo real y la interpretación experimental con IA quedan en el Product Backlog como trabajo futuro.
 

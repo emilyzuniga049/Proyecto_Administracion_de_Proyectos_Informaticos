@@ -29,7 +29,7 @@ Los interesados son las personas, grupos u organizaciones que pueden afectar al 
 ## 3.3 Interesados críticos y cómo los involucraremos
 
 - **Personas sordas usuarias:** se invitará a al menos una persona sorda a probar el incremento de cada Sprint; sus observaciones entran directamente al Product Backlog.
-- **Intérpretes de LESCO:** se les consultará antes de construir el formulario de disponibilidad (Sprint 1, semanas 9–10) y la agenda con videollamada (Sprint 2, semanas 11–12), porque sin su participación no existe el servicio.
+- **Intérpretes de LESCO:** se les consultará antes de construir el formulario de disponibilidad (Sprint 1, 9 al 19 de noviembre) y la agenda con videollamada (Sprint 2, 20 al 25 de noviembre), porque sin su participación no existe el servicio.
 - **Docente:** se le presentará el avance en cada entrega del Expediente y en la Sprint Review, para recibir aprobación y retroalimentación oportunas.
 
 > *Actualización (11/11/2026): los números de Sprint de esta lista se ajustaron a la replanificación D-01 ([Sección 11](11-decisiones-y-cambios.md)). El plan de comunicación con cada interesado está en la [Sección 10](10-comunicaciones-y-tablero.md).*
