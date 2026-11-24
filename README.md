@@ -4,6 +4,8 @@ Proyecto Incremental del curso **ISW-912 Administración de Proyectos Informáti
 
 Puente de comunicación digital para la comunidad sorda de Costa Rica: una persona sorda o un funcionario agenda una cita con un intérprete de LESCO certificado y la realiza por videollamada dentro de la plataforma.
 
+**Demo publicada (Vercel):** https://proyecto-administracion-de-proyecto.vercel.app/
+
 **Equipo:** Emily Zúñiga Solano (Product Owner + Developer) · Dylan Jiménez Alfaro (Scrum Master + Developer)
 
 ## Estructura del repositorio

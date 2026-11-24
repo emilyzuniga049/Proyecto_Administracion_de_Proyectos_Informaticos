@@ -4,6 +4,8 @@ Prototipo de la Plataforma web de intermediación LESCO (Proyecto Incremental, I
 
 Es una aplicación **React + Vite** sin servidor: los datos se simulan en el navegador (`localStorage`) y todos son ficticios. Las decisiones están en el Expediente, Secciones 02 y 11 (decisión D-02).
 
+**Versión publicada:** https://proyecto-administracion-de-proyecto.vercel.app/ (Vercel publica solo cada push a `main`, con Root Directory `app`).
+
 ## Cómo ejecutarla
 
 Requiere [Node.js](https://nodejs.org) 20 o más reciente.
