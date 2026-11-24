@@ -37,8 +37,8 @@ Al ser un equipo de dos personas, cada integrante combina una responsabilidad de
 | 07 · Estimación y cronograma de entregas | [07-estimacion-y-cronograma.md](07-estimacion-y-cronograma.md) | Completa |
 | 08 · Riesgos y adquisiciones | [08-riesgos-y-adquisiciones.md](08-riesgos-y-adquisiciones.md) | Completa |
 | 09 · Calidad y Definition of Done | [09-definition-of-done.md](09-definition-of-done.md) | Completa |
-| 10 · Comunicación y tablero de trabajo | [10-comunicaciones-y-tablero.md](10-comunicaciones-y-tablero.md) | Completa |
-| 11 · Decisiones y cambios | [11-decisiones-y-cambios.md](11-decisiones-y-cambios.md) | En curso |
+| 10 · Comunicación, tablero de trabajo y Working Agreements | [10-comunicaciones-y-tablero.md](10-comunicaciones-y-tablero.md) | Completa |
+| 11 · Decisiones y Registro de Solicitudes de Cambio | [11-decisiones-y-cambios.md](11-decisiones-y-cambios.md) | En curso |
 | 12 · Incremento final y cierre | — | Semana 13 |
 | Historial de cambios | [historial-de-cambios.md](historial-de-cambios.md) | Se actualiza en cada entrega |
 

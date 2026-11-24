@@ -9,6 +9,24 @@ Esta sección registra las decisiones que cambian el plan del proyecto. Se compl
 | D-03 | 11/11/2026 | **El tablero se lleva en Trello** en lugar de GitHub Projects. | El equipo ya conoce Trello y el curso lo acepta como herramienta (Semana 7). | Se actualizan las Secciones 05 y 10. | Scrum Master |
 | D-04 | 11/11/2026 | **Nuevo Product Goal:** prototipo web accesible para agendar una cita con un intérprete de LESCO certificado y realizarla por videollamada. | Consecuencia de D-01 y D-02: el Product Goal debe reflejar lo que de verdad se va a entregar. | Se actualiza la Sección 01; el Product Goal original queda como registro. | Product Owner |
 
+## Registro de Solicitudes de Cambio
+
+### Flujo de un cambio
+
+1. **Solicitud.** Cualquier integrante o interesado puede pedir un cambio (por chat, en clase o en una Sprint Review). Quien lo recibe lo anota aquí con un ID nuevo (CR-xx).
+2. **Evaluación.** El equipo estima su impacto en alcance (puntos), tiempo (Sprints), costo (horas) y riesgo, en el siguiente Sprint Planning o en una llamada de refinamiento.
+3. **Decisión.** La Product Owner decide: **aprobado** (y en qué Sprint entra), **diferido** (a trabajo futuro) o **rechazado**, con su justificación. Si afecta el proceso, decide el Scrum Master (WA-08). Durante un Sprint, un cambio solo entra si sale algo de igual tamaño (WA-10).
+4. **Registro y comunicación.** Se completa la fila, se actualizan el Excel y Trello, y el resultado se informa en la siguiente Sprint Review.
+
+### Registro
+
+| ID | Fecha | Solicitante | Descripción | Impacto (alcance · tiempo · costo · riesgo) | Decisión y justificación | Responsable | Sprint en que entra |
+|---|---|---|---|---|---|---|---|
+| CR-01 | 11/11/2026 | Dylan (Scrum Master) | Replanificar: dejar los 5 Sprints originales y construir en 2 Sprints, con un prototipo sin servidor de 37 puntos. | Alcance: de 85 a 37 puntos comprometidos (9 opcionales, 39 a trabajo futuro). Tiempo: la fecha de cierre no cambia. Costo: ₡0 en dinero; el esfuerzo del release queda en 2 Sprints (Sección 07). Riesgo: R-01 baja de 9 a 4. | **Aprobado.** Con las semanas 4 a 8 sin código, el plan original no cabía antes de la Semana 13 (D-01, D-02, D-04). | Emily (PO) | Sprint 1 |
+| CR-02 | 11/11/2026 | Dylan (Scrum Master) | Llevar el tablero en Trello en lugar de GitHub Projects. | Alcance: 0 puntos. Tiempo y costo: sin cambio (plan gratuito). Riesgo: bajo. | **Aprobado.** El equipo ya conoce Trello y el curso lo acepta (D-03). | Dylan (SM) | Sprint 1 |
+| CR-03 | 11/11/2026 | Equipo | Sacar HU-02 (verificación del intérprete) del Sprint 1 y dejarla como primer opcional. | Alcance: −3 puntos en el Sprint 1. Riesgo: en la demo no se verifica la certificación; se mitiga con intérpretes de prueba ya marcados como verificados. | **Aprobado.** El Sprint 1 debía caber en la velocidad mínima estimada (13 puntos). | Emily (PO) | Opcional del Sprint 2 |
+| CR-04 | 13/11/2026 | Emily (PO) | Quitar los emojis de la interfaz y usar íconos de línea propios, siempre con texto. | Alcance: 0 puntos (dentro de HU-04). Tiempo: menos de 1 hora. Riesgo: ninguno; mejora la consistencia visual y la lectura con lector de pantalla. | **Aprobado.** No pone en riesgo el Sprint Goal. | Emily (PO) | Sprint 1 |
+
 ## Pendiente de registrar en los Sprints
 
 - Resultado de SP-01: tecnología de videollamada elegida y por qué.

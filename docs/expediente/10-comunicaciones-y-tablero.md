@@ -78,3 +78,30 @@ En **Por hacer (Sprint 1)** están cargadas las 21 tareas del Sprint 1 ([Secció
 | SP-01 · Prueba de concepto de videollamada | 3 | Dylan, Emily |
 | MIT-01 · Primera versión en Vercel | 1 | Dylan |
 | Revisión, accesibilidad y Sprint Review | 3 | Dylan, Emily |
+
+## 10.3 Working Agreements (acuerdos de trabajo del equipo)
+
+**Versión:** 1.0 · **Fecha:** 22/11/2026 · **Próxima revisión:** Retrospectiva del Sprint 2 (6/12/2026)
+
+Son las reglas que el equipo acordó para trabajar juntos. Se escribieron después de la Retrospectiva del Sprint 1, donde salió que el trabajo quedó desbalanceado y que las tareas terminadas esperaron días sin revisión. Cada regla se puede verificar: se cumple o no se cumple.
+
+Cada regla se cerró con **puño de cinco** (0 = me opongo, 3 = puedo vivir con ella, 5 = la apoyo totalmente). Una regla queda aceptada si nadie muestra 0, 1 o 2; si alguien lo hace, primero se conversa qué haría falta para subir su voto.
+
+| # | Tema | Acuerdo | Cómo se verifica | Puño: Emily | Puño: Dylan |
+|---|---|---|---|---|---|
+| WA-01 | Comunicación | Respondemos los mensajes del proyecto en WhatsApp en menos de 12 horas en días de trabajo. | Hora del mensaje y de la respuesta en el chat. | 5 | 5 |
+| WA-02 | Comunicación | Pasamos a Trello, el mismo día, todo lo que acordamos por chat o por llamada. | Comentario en la tarjeta con la fecha del acuerdo. | 5 | 5 |
+| WA-03 | Ritmo | Hacemos el Daily de 10 minutos cada día de trabajo y llenamos su fila en el Excel ese mismo día. | Hoja *Seguimiento diario* sin días de trabajo vacíos. | 5 | 5 |
+| WA-04 | Ritmo | Cada uno avisa en el Daily si una de sus tarjetas lleva más de 2 días en "En progreso" o si no podrá trabajar en el proyecto esa semana. | Fecha de entrada a "En progreso" en Trello contra las filas del Daily. | 5 | 5 |
+| WA-05 | Calidad | Revisamos el trabajo del otro en menos de 24 horas desde que su tarjeta pasa a "En revisión". | Actividad de la tarjeta en Trello. | 5 | 5 |
+| WA-06 | Calidad | Pasamos una tarjeta a "Hecho" solo con los 9 puntos de la DoD cumplidos y con la revisión del otro integrante. | Comentario de revisión en cada tarjeta de "Hecho". | 5 | 5 |
+| WA-07 | Calidad | Subimos el trabajo terminado el mismo día, con un commit que empieza con el ID de la historia. | Historial de Git contra la fecha en que la tarjeta pasó a "En revisión". | 5 | 5 |
+| WA-08 | Decisiones | La Product Owner decide sobre el producto y el Scrum Master sobre el proceso, siempre después de escuchar al otro; si no hay acuerdo, se vota con puño de cinco y la decisión se anota en la Sección 11. | Entrada en la Sección 11 para cada decisión que cambia el plan. | 5 | 5 |
+| WA-09 | Conflictos | Planteamos un desacuerdo por llamada, no por chat, dentro de las 24 horas siguientes; si en 2 días no se resuelve, lo llevamos al docente en la siguiente clase. | Nota del desacuerdo y su resultado en la Sección 11. | 5 | 5 |
+| WA-10 | Cambios | Registramos toda solicitud de cambio en la Sección 11 antes de trabajarla; durante un Sprint solo entra si sale del Sprint algo de tamaño igual o mayor. | Cada cambio de alcance tiene su CR en el registro. | 5 | 5 |
+
+**Resultado:** las 10 reglas quedaron aceptadas con 5 de Emily y 5 de Dylan (nadie votó 0, 1 o 2).
+
+**Firmas:** los acuerdos se dan por firmados con el commit que los agrega, hecho por un integrante con la línea `Co-authored-by` del otro.
+
+**Revisión:** en cada Retrospectiva se revisa si se cumplió cada acuerdo; los que no sirven se cambian y se sube la versión.

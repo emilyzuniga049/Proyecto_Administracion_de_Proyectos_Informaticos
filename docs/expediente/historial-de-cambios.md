@@ -13,3 +13,4 @@ Cada vez que se modifica el Expediente se agrega una fila y se hace un *commit* 
 | 0.7 | 11/11/2026 | 10 | Plan de Comunicaciones y Tablero de Trabajo (Trello). | Dylan | `Expediente: Sección 10 comunicaciones y tablero` |
 | 0.8 | 11/11/2026 | 08 | Matriz de Riesgos, Plan de Mitigación y adquisiciones; acciones MIT agregadas al Sprint Backlog. | Dylan | `Expediente: Sección 08 riesgos y adquisiciones` |
 | 0.9 | 11/11/2026 | 11 | Registro de decisiones D-01 a D-04. | Dylan | `Expediente: Sección 11 registro de decisiones` |
+| 1.0 | 22/11/2026 | 10–11 | Working Agreements (WA-01 a WA-10) y Registro de Solicitudes de Cambio (CR-01 a CR-04). | Dylan y Emily | `Expediente: Working Agreements y Registro de Solicitudes de Cambio` |
