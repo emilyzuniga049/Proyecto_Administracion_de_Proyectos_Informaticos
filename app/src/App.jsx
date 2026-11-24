@@ -8,6 +8,8 @@ import Privacidad from './pages/Privacidad.jsx'
 import Disponibilidad from './pages/Disponibilidad.jsx'
 import VideollamadaPrueba from './pages/VideollamadaPrueba.jsx'
 import BuscarInterprete from './pages/BuscarInterprete.jsx'
+import Agendar from './pages/Agendar.jsx'
+import MisCitas from './pages/MisCitas.jsx'
 import LlamadaCita from './pages/LlamadaCita.jsx'
 import NoEncontrada from './pages/NoEncontrada.jsx'
 
@@ -23,6 +25,8 @@ export default function App() {
         <Route path="disponibilidad" element={<Disponibilidad />} />
         <Route path="videollamada-prueba" element={<VideollamadaPrueba />} />
         <Route path="buscar" element={<BuscarInterprete />} />
+        <Route path="agendar" element={<Agendar />} />
+        <Route path="mis-citas" element={<MisCitas />} />
         <Route path="citas/:citaId/llamada" element={<LlamadaCita />} />
         <Route path="*" element={<NoEncontrada />} />
       </Route>
