@@ -32,16 +32,16 @@ Al ser un equipo de dos personas, cada integrante combina una responsabilidad de
 | 02 · Contexto organizacional y restricciones | [02-contexto-y-restricciones.md](02-contexto-y-restricciones.md) | Completa (restricciones actualizadas) |
 | 03 · Interesados | [03-interesados.md](03-interesados.md) | Completa |
 | 04 · Ciclo de vida y primer Sprint | [04-ciclo-de-vida-y-primer-sprint.md](04-ciclo-de-vida-y-primer-sprint.md) | Completa (ciclo de vida replanificado) |
-| 05 · Backlog, Sprint Backlog y seguimiento | [05-backlog-y-seguimiento.md](05-backlog-y-seguimiento.md) | Completa (incluye Sprint Backlog 1 vigente) |
-| 06 · Alcance y criterios de aceptación | — | Pendiente |
+| 05 · Backlog, Sprint Backlog y seguimiento | [05-backlog-y-seguimiento.md](05-backlog-y-seguimiento.md) | Completa (Sprint Backlog 1 y 2) |
+| 06 · Alcance, Product Backlog priorizado y criterios de aceptación | [06-alcance-y-backlog.md](06-alcance-y-backlog.md) | Completa |
 | 07 · Estimación y cronograma de entregas | [07-estimacion-y-cronograma.md](07-estimacion-y-cronograma.md) | Completa |
 | 08 · Riesgos y adquisiciones | [08-riesgos-y-adquisiciones.md](08-riesgos-y-adquisiciones.md) | Completa |
 | 09 · Calidad y Definition of Done | [09-definition-of-done.md](09-definition-of-done.md) | Completa |
 | 10 · Comunicación, tablero de trabajo y Working Agreements | [10-comunicaciones-y-tablero.md](10-comunicaciones-y-tablero.md) | Completa |
-| 11 · Decisiones y Registro de Solicitudes de Cambio | [11-decisiones-y-cambios.md](11-decisiones-y-cambios.md) | En curso |
+| 11 · Decisiones y Registro de Solicitudes de Cambio | [11-decisiones-y-cambios.md](11-decisiones-y-cambios.md) | Completa |
 | Acta de Sprint Review y Retrospective · Sprint 1 | [acta-sprint-1.md](acta-sprint-1.md) | Completa |
 | Acta de Sprint Review y Retrospective · Sprint 2 | [acta-sprint-2.md](acta-sprint-2.md) | Completa |
-| 12 · Incremento final y cierre | — | Entrega del 25 de noviembre |
+| 12 · Incremento final y cierre (Informe Final) | [12-incremento-final-y-cierre.md](12-incremento-final-y-cierre.md) | Completa |
 | Historial de cambios | [historial-de-cambios.md](historial-de-cambios.md) | Se actualiza en cada entrega |
 
 El detalle del Product Backlog y de los Sprint Backlogs está en [`docs/Backlog/Backlog.xlsx`](../Backlog/Backlog.xlsx).
