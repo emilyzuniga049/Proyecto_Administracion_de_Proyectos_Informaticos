@@ -6,6 +6,8 @@ Puente de comunicación digital para la comunidad sorda de Costa Rica: una perso
 
 **Demo publicada (Vercel):** https://proyecto-administracion-de-proyecto.vercel.app/
 
+**Video del recorrido (respaldo de la demo):** https://drive.google.com/file/d/1qKJG8yZgsjDho2Cl2zSVYMjNAVypm3rE/view?usp=sharing
+
 **Equipo:** Emily Zúñiga Solano (Product Owner + Developer) · Dylan Jiménez Alfaro (Scrum Master + Developer)
 
 ## Estructura del repositorio

@@ -1,4 +1,4 @@
-# Sección 11 · Decisiones y cambios (registro en curso)
+# Sección 11 · Decisiones y Registro de Solicitudes de Cambio
 
 Esta sección registra las decisiones que cambian el plan del proyecto. Se completa durante los Sprints y se cierra con la entrega del 25 de noviembre. Cada decisión tiene su entrada en el [historial de cambios](historial-de-cambios.md).
 

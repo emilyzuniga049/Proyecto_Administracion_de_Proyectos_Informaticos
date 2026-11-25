@@ -9,6 +9,7 @@
 | **Entrega** | Miércoles 25 de noviembre de 2026 (Semana 11) |
 | **Incremento publicado** | https://proyecto-administracion-de-proyecto.vercel.app/ |
 | **Repositorio** | https://github.com/emilyzuniga049/Proyecto_Administracion_de_Proyectos_Informaticos |
+| **Video del recorrido (MIT-03)** | https://drive.google.com/file/d/1qKJG8yZgsjDho2Cl2zSVYMjNAVypm3rE/view?usp=sharing |
 | **Resultado** | **Product Goal cumplido.** Una persona sorda o un funcionario puede buscar un intérprete de LESCO, agendar una cita y realizarla por videollamada dentro de la plataforma. |
 
 ## 12.2 Incremento final
@@ -71,7 +72,7 @@ Detalle del alcance y de los criterios de aceptación: [Sección 06](06-alcance-
 | R-05 · No conseguir usuarios para validar | No ocurrió: una persona sorda y un intérprete voluntario validaron el 23/11. |
 | R-07 · Usar datos reales | Evitado: solo hay datos ficticios (`@demo.cr`). |
 | R-08 · La demo se queda sin datos | Mitigado con MIT-02: botón para restablecer los datos y cita de demostración. |
-| R-09 · Falla Vercel el día de la demo | Mitigado con MIT-03: video de respaldo del recorrido. |
+| R-09 · Falla Vercel el día de la demo | Mitigado con MIT-03: video de respaldo del recorrido, grabado el 24/11 ([enlace](https://drive.google.com/file/d/1qKJG8yZgsjDho2Cl2zSVYMjNAVypm3rE/view?usp=sharing)). |
 | R-11 · Red lenta en el aula | Aceptado (CR-07): la llamada se probó con datos móviles; se puede usar el celular como punto de acceso. |
 
 ## 12.6 Lecciones aprendidas
@@ -103,6 +104,39 @@ En orden de valor:
 | Aceptación del incremento por la Product Owner | Hecha en la Sprint Review del 24/11 ([acta](acta-sprint-2.md)): 37 de 37 puntos |
 | Expediente completo (Secciones 00 a 12) | Hecho |
 | Product Backlog y Trello actualizados | Hecho: todo lo comprometido en "Hecho"; opcionales y trabajo futuro en el Product Backlog |
-| Evidencias | Lighthouse en `docs/evidencias/`, pruebas en `app/src/lib/*.test.js` y video de respaldo (MIT-03) |
+| Evidencias | Lighthouse en `docs/evidencias/`, pruebas en `app/src/lib/*.test.js` y [video de respaldo](https://drive.google.com/file/d/1qKJG8yZgsjDho2Cl2zSVYMjNAVypm3rE/view?usp=sharing) (MIT-03, 24/11) |
 | Lecciones aprendidas | 12.6 |
 | Entrega al docente | 25/11/2026: enlace del repositorio, enlace de Vercel y demo en vivo |
+
+## 12.9 Guion de la demostración
+
+Duración aproximada: 10 minutos. Antes de empezar:
+- Abrir la app en la computadora y en el celular y tocar **Restablecer datos de prueba**.
+- Tener a mano el video de respaldo (MIT-03): https://drive.google.com/file/d/1qKJG8yZgsjDho2Cl2zSVYMjNAVypm3rE/view?usp=sharing
+
+| # | Paso | Quién | Qué mostrar | Min. |
+|---|---|---|---|---|
+| 1 | Problema y Product Goal | Emily | Barrera de comunicación de la comunidad sorda; qué promete el prototipo (Sección 01) | 1 |
+| 2 | Crear cuenta | Emily | `/registro`: rol, casilla obligatoria del aviso de privacidad, error si no se marca | 1 |
+| 3 | Interfaz accesible | Emily | Navegar con Tab, "Saltar al contenido", foco visible, vista en el celular | 1 |
+| 4 | Horarios del intérprete | Dylan | `laura@demo.cr` → "Mi perfil y mis horarios": agregar un bloque que choque y ver el mensaje | 1,5 |
+| 5 | Buscar intérprete | Dylan | `ana@demo.cr` → "Agendar una cita": buscar el domingo (sugiere el lunes) y luego un día con resultados | 1,5 |
+| 6 | Agendar | Emily | Elegir una hora, confirmar sin trámite (lo pide), elegir "Salud" y ver la confirmación | 1 |
+| 7 | Agenda del intérprete | Emily | `laura@demo.cr` → "Mi agenda de citas": la cita aparece confirmada | 0,5 |
+| 8 | Videollamada de la cita | Dylan | Ana en la computadora y Laura en el celular → cita de demostración → "Unirse a la llamada"; con `carlos@demo.cr` no se puede entrar | 1,5 |
+| 9 | Cómo se gestionó | Dylan | Trello, velocidad (0 y 37), arrastre y recorte (Secciones 07 y 11) | 1 |
+
+**Si algo falla:**
+- Si no carga la llamada, usar **Abrir en otra pestaña**.
+- Si no hay red, compartir el celular como punto de acceso.
+- Si falla Vercel, mostrar el video de respaldo o correr `npm run dev`.
+
+### Reparto propuesto para la defensa oral
+
+Cada integrante responde por sus secciones, de acuerdo con su rol:
+
+| Integrante | Secciones |
+|---|---|
+| Emily (Product Owner) | 01 Problema y Product Goal · 03 Interesados · 05 Backlog y seguimiento · 06 Alcance y criterios de aceptación · 09 Definition of Done · 12 Cierre |
+| Dylan (Scrum Master) | 02 Contexto y restricciones · 04 Ciclo de vida · 07 Estimación y cronograma · 08 Riesgos y adquisiciones · 10 Comunicación y Working Agreements · 11 Decisiones y cambios |
+| Los dos | 00 Portada y Scrum Team, y las actas de los Sprints |

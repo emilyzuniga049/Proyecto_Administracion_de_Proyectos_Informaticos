@@ -61,7 +61,7 @@
 |---|---|---|---|---|
 | MIT-01 | Publicar una primera versión en Vercel (ambiente de pruebas) | R-09, R-01 | Sprint 1 | Dylan |
 | MIT-02 | Datos de prueba que se cargan solos y botón "Restablecer demo" | R-08 | Sprint 2 | Dylan |
-| MIT-03 | Grabar un video de respaldo del recorrido completo (versión mínima: grabación de pantalla de unos 3 minutos, sin editar) | R-02, R-11 | Sprint 2 | Emily |
+| MIT-03 | Grabar un video de respaldo del recorrido completo (versión mínima: grabación de pantalla de unos 3 minutos, sin editar) · Hecho el 24/11: [video](https://drive.google.com/file/d/1qKJG8yZgsjDho2Cl2zSVYMjNAVypm3rE/view?usp=sharing) | R-02, R-11 | Sprint 2 | Emily |
 | ~~MIT-04~~ | ~~Probar la videollamada en la red del aula y con datos móviles~~ · Quitada el 23/11 (CR-07); la prueba con datos móviles ya se hizo. | R-02, R-11 | — | — |
 
 ## 8.3 Adquisiciones críticas

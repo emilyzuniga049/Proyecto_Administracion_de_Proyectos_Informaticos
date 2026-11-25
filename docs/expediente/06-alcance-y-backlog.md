@@ -17,7 +17,7 @@ Esta sección define qué entra y qué no entra en el release que se entrega el 
 | E-1 | Prototipo web publicado (React + Vite, datos de prueba en el navegador) | https://proyecto-administracion-de-proyecto.vercel.app/ y carpeta `app/` |
 | E-2 | Expediente del proyecto, Secciones 00 a 12 | `docs/expediente/` |
 | E-3 | Product Backlog, Sprint Backlogs y seguimiento diario | `docs/Backlog/Backlog.xlsx` y tablero de Trello |
-| E-4 | Evidencias: reportes de Lighthouse, pruebas automáticas y video de respaldo de la demo | `docs/evidencias/` y `app/src/lib/*.test.js` |
+| E-4 | Evidencias: reportes de Lighthouse, pruebas automáticas y video de respaldo de la demo | `docs/evidencias/`, `app/src/lib/*.test.js` y [video en Google Drive](https://drive.google.com/file/d/1qKJG8yZgsjDho2Cl2zSVYMjNAVypm3rE/view?usp=sharing) |
 | E-5 | Actas de Sprint Review y Retrospective | [acta-sprint-1.md](acta-sprint-1.md) y [acta-sprint-2.md](acta-sprint-2.md) |
 
 ### Qué incluye el alcance

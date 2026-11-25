@@ -165,7 +165,7 @@ Esos 18 puntos se terminaron dentro del Sprint 2:
 | HU-08 | Aceptar o rechazar solicitudes de cita (versión simple: aceptación automática) | Nuevo | 3 | Hecho · Emily (revisó Dylan el 24/11) |
 | HU-11 | Unirse a la videollamada de la cita | Nuevo | 8 | Hecho · Dylan (revisó Emily el 23/11) |
 | MIT-02 | Datos de prueba que se cargan solos y botón "Restablecer demo" | Mitigación | — | Hecho (revisada por Emily el 23/11) |
-| MIT-03 | Grabar un video de respaldo del recorrido completo (versión mínima, CR-07) | Mitigación | — | Por hacer · Emily |
+| MIT-03 | Grabar un video de respaldo del recorrido completo (versión mínima, CR-07) | Mitigación | — | Hecho · Emily (24/11): [video](https://drive.google.com/file/d/1qKJG8yZgsjDho2Cl2zSVYMjNAVypm3rE/view?usp=sharing) |
 | MIT-04 | Probar la videollamada en la red del aula y con datos móviles | Mitigación | — | Quitada (CR-07); datos móviles probados el 23/11 |
 | | **Total** | | **37** | **37 en Hecho** |
 
