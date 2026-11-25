@@ -34,5 +34,5 @@ Esta sección registra las decisiones que cambian el plan del proyecto. Se compl
 
 ## Pendiente de registrar en los Sprints
 
-- Velocidad real del Sprint 2 (25 de noviembre).
+- Velocidad real del Sprint 2: 37 puntos (registrada el 24/11 en la Sección 07 y en el Acta del Sprint 2).
 - Cambios de alcance que se decidan en cada Sprint Planning.

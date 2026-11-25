@@ -153,20 +153,26 @@ Esos 18 puntos se terminaron dentro del Sprint 2:
 | **Sprint Goal** | «Que una persona sorda o un funcionario pueda buscar un intérprete, agendar una cita, que el intérprete la acepte y que ambos entren a la videollamada desde la plataforma». |
 | **Compromiso** | 18 puntos arrastrados del Sprint 1 + 19 puntos nuevos = 37 puntos |
 
-| ID | Título | Origen | Puntos | Estado al 23/11 |
+| ID | Título | Origen | Puntos | Estado al 24/11 |
 |---|---|---|---|---|
 | HU-01 | Registro e inicio de sesión con rol | Arrastrado del Sprint 1 | 5 | Hecho |
 | HU-05 | Consentimiento informado (Ley 8968) | Arrastrado del Sprint 1 | 2 | Hecho |
 | HU-04 | Interfaz base accesible | Arrastrado del Sprint 1 | 3 | Hecho |
 | HU-03 | Perfil y disponibilidad del intérprete | Arrastrado del Sprint 1 | 5 | Hecho |
 | SP-01 | Prueba de concepto de videollamada | Arrastrado del Sprint 1 | 3 | Hecho |
-| HU-06 | Buscar intérpretes por fecha y hora | Nuevo | 3 | Por hacer |
-| HU-07 | Agendar una cita previa | Nuevo | 5 | Por hacer |
-| HU-08 | Aceptar o rechazar solicitudes de cita (versión simple: aceptación automática) | Nuevo | 3 | Por hacer |
-| HU-11 | Unirse a la videollamada de la cita | Nuevo | 8 | Por hacer |
-| MIT-02 | Datos de prueba que se cargan solos y botón "Restablecer demo" | Mitigación | — | Código listo (botón "Restablecer datos de prueba"); falta revisión |
-| MIT-03 | Grabar un video de respaldo del recorrido completo (versión mínima, CR-07) | Mitigación | — | Por hacer |
+| HU-06 | Buscar intérpretes por fecha y hora | Nuevo | 3 | Hecho · Dylan (revisó Emily el 23/11) |
+| HU-07 | Agendar una cita previa | Nuevo | 5 | Hecho · Emily (revisó Dylan el 24/11) |
+| HU-08 | Aceptar o rechazar solicitudes de cita (versión simple: aceptación automática) | Nuevo | 3 | Hecho · Emily (revisó Dylan el 24/11) |
+| HU-11 | Unirse a la videollamada de la cita | Nuevo | 8 | Hecho · Dylan (revisó Emily el 23/11) |
+| MIT-02 | Datos de prueba que se cargan solos y botón "Restablecer demo" | Mitigación | — | Hecho (revisada por Emily el 23/11) |
+| MIT-03 | Grabar un video de respaldo del recorrido completo (versión mínima, CR-07) | Mitigación | — | Por hacer · Emily |
 | MIT-04 | Probar la videollamada en la red del aula y con datos móviles | Mitigación | — | Quitada (CR-07); datos móviles probados el 23/11 |
-| | **Total** | | **37** | **18 en Hecho** |
+| | **Total** | | **37** | **37 en Hecho** |
+
+**Reparto (23/11):** Dylan hace HU-06 y HU-11 (11 puntos) y Emily HU-07, HU-08 y MIT-03 (8 puntos y el video). Cada historia la revisa el otro integrante con la DoD (WA-05, WA-06).
 
 Como el Sprint 2 dura 6 días y carga 37 puntos, desde el inicio se aplica el orden de recorte de la [Sección 07](07-estimacion-y-cronograma.md): no se toman opcionales y HU-08 se hace en su versión simple (las citas quedan aceptadas automáticamente).
+
+### Resultado del Sprint 2
+
+El Sprint Goal se cumplió: los 37 puntos (18 del arrastre y 19 nuevos) cumplen la DoD y funcionan en Vercel. **Velocidad real del Sprint 2: 37 puntos.** Sprint Review y Retrospective del 24/11: ver [acta-sprint-2.md](acta-sprint-2.md).

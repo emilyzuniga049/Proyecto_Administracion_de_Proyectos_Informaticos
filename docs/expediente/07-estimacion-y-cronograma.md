@@ -78,13 +78,7 @@ La velocidad real se mide al cerrar cada Sprint, contando **solo** las historias
 
 ### Registro de la sesión de planning poker
 
-*(El equipo completa esta tabla con las historias en las que hubo más diferencia.)*
-
-| Historia | Carta de Emily | Carta de Dylan | Acuerdo | ¿Qué se discutió? |
-|---|---|---|---|---|
-| | | | | |
-| | | | | |
-| | | | | |
+Las historias se estimaron con planning poker en el Sprint 0. Los puntos finales están en el Product Backlog (Sección 05 y `Backlog.xlsx`); no se guardaron las cartas de cada uno. La mayor diferencia fue en **HU-11**, que Dylan veía más grande y compleja por depender de la videollamada.
 
 ## 7.2 Cronograma de Entregas (Release Plan)
 
@@ -166,8 +160,10 @@ Al cerrar cada Sprint se anotan los puntos que quedan del compromiso de 37. Si l
 | Inicio (9 nov) | 37 | 37 |
 | Fin del Sprint 1 (19 nov) | 19 | 37 (velocidad real: 0) |
 | Avance del Sprint 2 (23 nov) | — | 19 (18 puntos del arrastre en Hecho) |
-| Fin del Sprint 2 (25 nov) | 0 | *(completar)* |
+| Fin del Sprint 2 (24 nov, Sprint Review) | 0 | 0 (velocidad real: 37) |
 
 También se usa el **SPI = puntos terminados ÷ puntos planificados**. Si es menor que 1, vamos atrasados.
 
 **SPI del Sprint 1:** 0 ÷ 18 = 0. Vamos atrasados, así que se aplicó el orden de recorte en el Sprint 2 (sin opcionales y HU-08 en versión simple).
+
+**SPI del Sprint 2:** 37 ÷ 37 = 1. El release se completó para la entrega del 25 de noviembre.
